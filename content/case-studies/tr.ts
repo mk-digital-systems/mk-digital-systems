@@ -60,16 +60,16 @@ const tr: Partial<Record<ProjectId, CaseStudyCopy>> = {
     },
     screens: {
       "ops-approvals": {
-        caption: "MK OPS · Onaylar: ekip liderlerinin gönderdiği günlük işler tek listede onaylanır ya da reddedilir.",
-        alt: "MK OPS onaylar ekranı; örnek verilerle onay bekleyen günlük işler",
+        caption: "MK OPS · Genel bakış: proje durumları, dönem hakedişi ve yaklaşan araç belge tarihleri.",
+        alt: "MK OPS genel bakış ekranı; örnek proje, hakediş ve araç uyarıları",
       },
       "ops-mobile": {
-        caption: "MK OPS · Mobil: aynı onay listesi sahada telefondan.",
-        alt: "MK OPS mobil onay ekranı; örnek verilerle",
+        caption: "MK OPS · Puantaj: çalışılan gün, izin, rapor ve hafta tatili kayıtları aylık tabloda.",
+        alt: "MK OPS personel puantaj ekranı; örnek aylık çalışma kayıtları",
       },
       "ops-management": {
-        caption: "MK OPS · Yönetim paneli: ekipler, araçlar, malzeme stoğu, ekipman ve iş kalemleri.",
-        alt: "MK OPS yönetim paneli; örnek verilerle takımlar listesi",
+        caption: "MK OPS · Depo: depo bazında stok dağılımı ve araç üzerindeki ekipmanlar.",
+        alt: "MK OPS depo yönetimi ekranı; örnek stok ve araç ekipmanı kayıtları",
       },
     },
     ctaText: "Sahadaki işi ve ofisteki takibi bir araya getirmek istiyorsanız bugünkü akışınızı anlatın; size uygun yaklaşımı birlikte belirleyelim.",
@@ -92,11 +92,11 @@ const tr: Partial<Record<ProjectId, CaseStudyCopy>> = {
     meta: {
       title: "Restoran sipariş ve adisyon yönetimi | MK Digital Systems",
       description:
-        "MK Adisyon; çalışan web sistemi ile garson, mutfak, kasa ve yönetim akışlarını birleştirir. Mobil uygulaması kapalı test sürecindedir.",
+        "MK Adisyon; çalışan web sistemi ile garson, mutfak, kasa ve yönetim akışlarını birleştirir. Mobil uygulaması Google Play'de yayındadır.",
     },
     title: "Siparişten ödemeye restoran operasyonunu tek akışta yönetmek",
     lead:
-      "MK Adisyon, masadaki ilk siparişten mutfak hazırlığına ve hesabın kapanmasına kadar restoran ekibinin ortak bir kayıt üzerinden çalışmasını sağlayan iki yüzeyli bir üründür: çalışan web sistemi ve kapalı testteki mobil uygulama.",
+      "MK Adisyon, masadaki ilk siparişten mutfak hazırlığına ve hesabın kapanmasına kadar restoran ekibinin ortak bir kayıt üzerinden çalışmasını sağlayan iki yüzeyli bir üründür: çalışan web sistemi ve Google Play'de yayınlanan mobil uygulama.",
     audience: {
       heading: "Kimin sorunu?",
       text:
@@ -131,9 +131,9 @@ const tr: Partial<Record<ProjectId, CaseStudyCopy>> = {
       ],
     },
     solution: {
-      heading: "Gerçek web sistemi ve kapalı testte mobil uygulama",
+      heading: "Gerçek web sistemi ve yayındaki mobil uygulama",
       text:
-        "MK Adisyon proje seviyesinde iki gerçek ürün yüzeyine sahiptir. Aşağıdaki operasyon özellikleri çalışan web sistemi üzerinden doğrulanmıştır. Ayrı mobil uygulama geliştirilmiştir ve kapalı testtedir; bu yüzeye yalnızca doğrulanabilen kapsam atfedilir.",
+        "MK Adisyon proje seviyesinde iki gerçek ürün yüzeyine sahiptir. Aşağıdaki operasyon özellikleri çalışan web sistemi üzerinden doğrulanmıştır. Ayrı Android uygulaması Google Play'de yayınlanmıştır; iki yüzeyin kapsamı açıkça ayrılır.",
       parts: {
         web: {
           summary:
@@ -149,10 +149,10 @@ const tr: Partial<Record<ProjectId, CaseStudyCopy>> = {
         },
         mobile: {
           summary:
-            "MK Adisyon'un geliştirilmiş ikinci ürün yüzeyi mobil uygulamadır. Uygulama kapalı test sürecindedir; doğrulanmış karşılama ekranı dışında özellik kapsamı bu çalışmada genişletilmez.",
+            "MK Adisyon'un ikinci ürün yüzeyi Google Play'de yayınlanan Android mobil uygulamadır. Mobil operasyon ile web yönetim paneli ayrı kullanım bağlamlarıyla sunulur.",
           highlights: [
             "Gerçek ve geliştirilmiş MK Adisyon ürün yüzeyi",
-            "Kapalı test sürecinde",
+            "Google Play'de yayında",
             "Web sisteminden ayrı doğrulanmış uygulama adresi",
           ],
         },
@@ -168,8 +168,8 @@ const tr: Partial<Record<ProjectId, CaseStudyCopy>> = {
         alt: "MK Adisyon responsive web garson ekranı, örnek masa verileriyle",
       },
       "adisyon-mobile-app": {
-        caption: "Mobil uygulama · Kapalı test yüzeyinin doğrulanmış MK Adisyon karşılama ekranı.",
-        alt: "Kapalı testteki MK Adisyon mobil uygulamasının karşılama ekranı",
+        caption: "Mobil uygulama · Google Play'de yayınlanan MK Adisyon Android uygulaması.",
+        alt: "Google Play'de yayınlanan MK Adisyon mobil uygulamasının karşılama ekranı",
       },
       "adisyon-kitchen": {
         caption: "Web uygulaması · Mutfak: siparişler masa, tur ve istasyona göre kartlarda; bekliyor, hazırlanıyor ve hazır durumlarıyla.",

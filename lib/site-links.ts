@@ -20,4 +20,6 @@ export const socialLinks: SocialLink[] = [
 export const siteLinks = {
   creator: "https://mustafaoner.net",
   creatorLabel: "mustafaoner.net",
+  googlePlay: "https://play.google.com/store/apps/developer?id=MK+DIGITAL+SYSTEMS",
+  googlePlayLabel: "Google Play",
 };

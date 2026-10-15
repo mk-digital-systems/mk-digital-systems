@@ -285,7 +285,7 @@ const tr: SolutionsCopy = {
       },
       work: {
         heading: "Gerçek çalışmalar",
-        text: "Kapalı testteki MK Adisyon mobil uygulaması ve Aura günlük uygulaması.",
+        text: "Google Play'de yayınlanan MK Adisyon, Aura Günlük ve Mavi Kadraj ile Öğreniyorum uygulamaları.",
       },
       faq: {
         heading: "Sık sorulan sorular",
@@ -298,7 +298,7 @@ const tr: SolutionsCopy = {
           {
             question: "Uygulama yayına çıkmadan denenebilir mi?",
             answer:
-              "Evet. Uygulamayı yayından önce sınırlı bir kullanıcı grubuyla kapalı testte denemek mümkündür; MK Adisyon mobil uygulaması bugün bu aşamadadır.",
+              "Evet. Uygulamayı yayından önce sınırlı bir kullanıcı grubuyla kapalı testte denemek mümkündür. MK Adisyon ise bu aşamayı tamamlamış ve Google Play'de yayınlanmıştır.",
           },
           {
             question: "Mobil uygulamanın fiyatı neye göre değişir?",

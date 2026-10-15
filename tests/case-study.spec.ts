@@ -26,7 +26,7 @@ test("case study copy is complete and never reads like a sales page", () => {
   }
 });
 
-test("MK Adisyon keeps the verified web and closed-test mobile surfaces distinct", () => {
+test("MK Adisyon keeps its live web and published mobile surfaces distinct", () => {
   const project = getProject("mk-adisyon")!;
   expect(project.name).toBe("MK Adisyon");
   expect(project.parts).toEqual(
@@ -34,8 +34,8 @@ test("MK Adisyon keeps the verified web and closed-test mobile surfaces distinct
       expect.objectContaining({ id: "web", status: "live-demo" }),
       expect.objectContaining({
         id: "mobile",
-        status: "closed-test",
-        links: [expect.objectContaining({ url: "https://adisyon-app-umber.vercel.app" })],
+        status: "live-demo",
+        links: [expect.objectContaining({ url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.adisyon" })],
       }),
     ]),
   );

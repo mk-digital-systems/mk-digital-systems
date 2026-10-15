@@ -89,9 +89,9 @@ export const bilecik: CityPage = {
       heading: "Benzer problemleri çözdüğümüz işler",
       intro: "Bilecik'te yapılmış projeler değil; stok, üretim ve katalog konularındaki yetkinliğimizi gösteren çalışmalar.",
       projects: [
-        { id: "gunluk-imalat", note: "Üretim sahasındaki günlük imalat kayıtlarını dijitale taşıyan uygulama." },
-        { id: "santiye-yonetim", note: "Proje, ekip, imalat ve puantajı tek yerde izleyen yönetim sistemi; ağır saha işlerinin kayıt mantığı." },
-        { id: "mavi-yapi", note: "Ürün kataloğu, kategori sayfaları ve teklif formu olan iki dilli B2B sitesi örneği." },
+        { id: "saha-santiye", note: "Proje, ekip, personel ve saha kayıtlarını tek yerde izleyen MK OPS operasyon sistemi." },
+        { id: "mk-farm", note: "Tarımsal işletme kayıtlarını ve günlük operasyonları düzenleyen yönetim ürünü." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
         { id: "mavi-kadraj-arsiv", note: "Konu ve kategoriye göre aranabilen, filtrelenebilen görsel arşiv; renk ve desene göre filtrelenen bir taş kataloğunun altyapısına benzer." },
       ],
     },

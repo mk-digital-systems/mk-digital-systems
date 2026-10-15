@@ -94,9 +94,9 @@ export const zonguldak: CityPage = {
       heading: "Saha operasyonunda yaptıklarımız",
       intro: "Bu projeler Zonguldak'ta yapılmadı; ancak sahada ekip, iş ve puantaj takibinde kurduğumuz sistemlerin en yakın örnekleri.",
       projects: [
-        { id: "santiye-yonetim", note: "Tek bir şirketin şantiye operasyonuna göre kurulan; projeleri, günlük ekip planını, imalatı ve puantajı izleyen yönetim sistemi. Aktif kullanımda." },
+        { id: "mk-farm", note: "Üretim ve gider kayıtlarını günlük operasyonlarla birleştiren tarımsal yönetim ürünü." },
         { id: "saha-santiye", note: "Her şirketin saha ekiplerini, işlerini ve onaylarını kendi alanında yönettiği çok şirketli operasyon sistemi." },
-        { id: "is-takip", note: "Görevlerin durumunu ve sorumlusunu tek yerde izleyen iş takip uygulaması." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
       ],
     },
     {

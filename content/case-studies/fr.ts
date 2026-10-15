@@ -60,16 +60,16 @@ const fr: Partial<Record<ProjectId, CaseStudyCopy>> = {
     },
     screens: {
       "ops-approvals": {
-        caption: "MK OPS · Validations : les travaux du jour envoyés par les chefs d’équipe sont validés ou refusés dans une seule liste.",
-        alt: "Écran de validations MK OPS avec des travaux d’exemple en attente",
+        caption: "MK OPS · Vue d’ensemble : états des projets, situation de période et échéances des véhicules.",
+        alt: "Vue d’ensemble MK OPS avec projets, situations et alertes véhicule d’exemple",
       },
       "ops-mobile": {
-        caption: "MK OPS · Mobile : la même liste de validations sur téléphone, sur le terrain.",
-        alt: "Validations MK OPS sur mobile avec des données d’exemple",
+        caption: "MK OPS · Présences : jours travaillés, congés, arrêts et repos dans un tableau mensuel.",
+        alt: "Écran de présence du personnel MK OPS avec des données mensuelles d’exemple",
       },
       "ops-management": {
-        caption: "MK OPS · Gestion : équipes, véhicules, stock de matériel, équipements et postes de travail.",
-        alt: "Panneau de gestion MK OPS avec une liste d’équipes d’exemple",
+        caption: "MK OPS · Dépôt : stock par dépôt et équipements affectés aux véhicules.",
+        alt: "Écran de gestion des dépôts MK OPS avec stock et équipements véhicule d’exemple",
       },
     },
     ctaText: "Si vous voulez réunir le travail terrain et le suivi au bureau, racontez-nous comment se déroule votre journée aujourd’hui ; nous définirons ensemble la bonne approche.",
@@ -92,11 +92,11 @@ const fr: Partial<Record<ProjectId, CaseStudyCopy>> = {
     meta: {
       title: "Gestion des commandes et additions en restauration | MK Digital Systems",
       description:
-        "MK Adisyon relie service, cuisine, caisse et gestion dans un système web actif. Son application mobile est en test fermé.",
+        "MK Adisyon relie service, cuisine, caisse et gestion dans un système web actif. Son application mobile est publiée sur Google Play.",
     },
     title: "Piloter le restaurant dans un même flux, de la commande au paiement",
     lead:
-      "MK Adisyon est un produit à deux surfaces qui fait travailler l'équipe sur une même addition, de la première commande à table jusqu'à la préparation et à l'encaissement : un système web actif et une application mobile en test fermé.",
+      "MK Adisyon est un produit à deux surfaces qui fait travailler l'équipe sur une même addition, de la première commande à table jusqu'à la préparation et à l'encaissement : un système web actif et une application mobile publiée sur Google Play.",
     audience: {
       heading: "Le problème de qui ?",
       text:
@@ -131,9 +131,9 @@ const fr: Partial<Record<ProjectId, CaseStudyCopy>> = {
       ],
     },
     solution: {
-      heading: "Un vrai système web et une application mobile en test fermé",
+      heading: "Un vrai système web et une application mobile publiée",
       text:
-        "MK Adisyon possède deux surfaces produit réelles. Les fonctions opérationnelles ci-dessous sont vérifiées dans le système web actif. Une application mobile distincte a été développée et se trouve en test fermé ; seuls les éléments vérifiés lui sont attribués ici.",
+        "MK Adisyon possède deux surfaces produit réelles. Les fonctions opérationnelles ci-dessous sont vérifiées dans le système web actif. Une application Android distincte est publiée sur Google Play et les deux surfaces sont décrites séparément.",
       parts: {
         web: {
           summary:
@@ -149,10 +149,10 @@ const fr: Partial<Record<ProjectId, CaseStudyCopy>> = {
         },
         mobile: {
           summary:
-            "La deuxième surface développée de MK Adisyon est son application mobile. Elle est en test fermé ; cette étude n'étend pas son périmètre au-delà de l'écran d'accueil vérifié.",
+            "La deuxième surface de MK Adisyon est son application Android publiée sur Google Play. Les opérations mobiles et la gestion web sont présentées comme deux contextes distincts.",
           highlights: [
             "Une surface MK Adisyon réelle et développée",
-            "Actuellement en test fermé",
+            "Publiée sur Google Play",
             "Une adresse d'application vérifiée, distincte du système web",
           ],
         },
@@ -168,8 +168,8 @@ const fr: Partial<Record<ProjectId, CaseStudyCopy>> = {
         alt: "Écran responsive de service MK Adisyon avec tables d'exemple",
       },
       "adisyon-mobile-app": {
-        caption: "Application mobile · Écran d'accueil MK Adisyon vérifié de la surface en test fermé.",
-        alt: "Écran d'accueil de l'application mobile MK Adisyon en test fermé",
+        caption: "Application mobile · Application Android MK Adisyon publiée sur Google Play.",
+        alt: "Écran d'accueil de l'application mobile MK Adisyon publiée sur Google Play",
       },
       "adisyon-kitchen": {
         caption: "Application web · Cuisine : les commandes en cartes par table, tour et poste, marquées en attente, en préparation ou prêtes.",

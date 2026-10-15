@@ -71,9 +71,9 @@ export const tekirdag: CityPage = {
       heading: "Örnek aldığımız işler",
       intro: "Bu projeler Tekirdağ'da yapılmadı; ancak üretim takibi ve restoran operasyonu konusunda ne kurabildiğimizi gösteriyor.",
       projects: [
-        { id: "gunluk-imalat", note: "Üretim sahasındaki günlük imalat kayıtlarını dijital karta dönüştüren uygulama; atölye bazlı kayıt mantığının örneği." },
+        { id: "mk-farm", note: "Üretim ve gider kayıtlarını günlük tarımsal operasyonlarla birleştiren yönetim ürünü." },
         { id: "mk-adisyon", note: "Garson, mutfak ve kasayı bağlayan adisyon ürünü; kalabalık servis saatleri için tasarlandı." },
-        { id: "mavi-kafe", note: "Dijital menü, galeri ve rezervasyon akışıyla kafe ve restoran sitesi örneği." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
       ],
     },
     {

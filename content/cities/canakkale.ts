@@ -94,7 +94,7 @@ export const canakkale: CityPage = {
       intro: "Bu projeler Çanakkale'de yapılmadı; bir yeri anlatmak, konuk ağırlamak ve yoğunluğu yönetmek üzerine neler kurabildiğimizi gösteriyor.",
       projects: [
         { id: "kadraj-rotam", note: "Yerel ve küresel rotaları, saha notlarını ve keşif rehberlerini sunan platform; bir bölgenin rotalarını dijitalde anlatmanın örneği." },
-        { id: "mavi-kadraj-otel", note: "Oda sayfaları, galeri ve adım adım rezervasyon talebiyle otel ve pansiyon sitesi örneği." },
+        { id: "mavi-kadraj-arsiv", note: "Doğa ve gezi fotoğraflarını konu odaklı sunan görsel içerik platformu." },
         { id: "mk-resepsiyon", note: "Oda planı, misafir girişi ve tahsilatı bağlayan resepsiyon sistemi." },
         { id: "mk-adisyon", note: "Garson, mutfak ve kasayı aynı akışta buluşturan adisyon ürünü." },
       ],

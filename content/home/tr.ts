@@ -60,7 +60,7 @@ const tr: HomeCopy = {
       {
         question: "Mobil uygulama geliştiriyor musunuz?",
         answer:
-          "Evet. MK Adisyon’un mobil uygulaması bugün kapalı test aşamasında; Aura ise günlük tutma ve ruh hâli takibi için geliştirdiğimiz bir uygulama.",
+          "Evet. MK Adisyon ve Aura Günlük Google Play'de yayında; mobil ürünlerimizi kurumsal portföyümüzde ayrı ürün sayfalarıyla tanıtıyoruz.",
       },
       {
         question: "Mevcut sitem için SEO ya da WordPress düzenlemesi yapıyor musunuz?",

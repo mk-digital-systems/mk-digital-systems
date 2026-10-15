@@ -102,8 +102,8 @@ export const sakarya: CityPage = {
         "Sakarya'daki bir müşteriye ait olmayan, ancak tedarik, saha ve üretim takibinde neler kurabildiğimizi gösteren çalışmalar:",
       projects: [
         { id: "saha-santiye", note: "Birden fazla şirketin saha ekiplerini, işlerini ve onaylarını kendi alanında yönettiği operasyon sistemi; servis ve montaj ekipleri için uyarlanabilir yapı." },
-        { id: "gunluk-imalat", note: "Üretim sahasındaki günlük imalat kayıtlarını dijitale taşıyan uygulama." },
-        { id: "mavi-yapi", note: "Katalog ve teklif formuyla kurgulanmış iki dilli B2B tedarik sitesi örneği." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
+        { id: "mk-farm", note: "Sakarya'daki tarımsal üretim ihtiyacına yakın duran kayıt ve operasyon yönetimi ürünü." },
       ],
     },
     {

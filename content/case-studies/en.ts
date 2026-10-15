@@ -60,16 +60,16 @@ const en: Partial<Record<ProjectId, CaseStudyCopy>> = {
     },
     screens: {
       "ops-approvals": {
-        caption: "MK OPS · Approvals: daily work submitted by crew leaders is approved or rejected from one list.",
-        alt: "MK OPS approvals screen with sample daily work awaiting approval",
+        caption: "MK OPS · Overview: project states, period progress payments and approaching vehicle document dates.",
+        alt: "MK OPS overview with sample projects, progress payments and vehicle alerts",
       },
       "ops-mobile": {
-        caption: "MK OPS · Mobile: the same approval list on a phone in the field.",
-        alt: "MK OPS mobile approvals screen with sample data",
+        caption: "MK OPS · Attendance: worked days, leave, reports and weekly rest in a monthly table.",
+        alt: "MK OPS personnel attendance screen with sample monthly records",
       },
       "ops-management": {
-        caption: "MK OPS · Management: crews, vehicles, material stock, equipment and work items.",
-        alt: "MK OPS management panel with a sample list of crews",
+        caption: "MK OPS · Warehouse: stock by warehouse and equipment assigned to vehicles.",
+        alt: "MK OPS warehouse management screen with sample stock and vehicle equipment",
       },
     },
     ctaText: "If you want to bring field work and office tracking together, tell us how your day runs today and we’ll shape the right approach together.",
@@ -92,11 +92,11 @@ const en: Partial<Record<ProjectId, CaseStudyCopy>> = {
     meta: {
       title: "Restaurant ordering and check management | MK Digital Systems",
       description:
-        "MK Adisyon connects waiter, kitchen, cashier and management flows in a working web system. Its mobile application is in closed testing.",
+        "MK Adisyon connects waiter, kitchen, cashier and management flows in a working web system. Its mobile application is published on Google Play.",
     },
     title: "Managing restaurant operations in one flow, from order to payment",
     lead:
-      "MK Adisyon is a two-surface product that keeps the restaurant team on one shared record, from the first table order through kitchen preparation to closing the bill: a working web system and a mobile application in closed testing.",
+      "MK Adisyon is a two-surface product that keeps the restaurant team on one shared record, from the first table order through kitchen preparation to closing the bill: a working web system and a mobile application published on Google Play.",
     audience: {
       heading: "Whose problem?",
       text:
@@ -131,9 +131,9 @@ const en: Partial<Record<ProjectId, CaseStudyCopy>> = {
       ],
     },
     solution: {
-      heading: "A real web system and a mobile application in closed testing",
+      heading: "A real web system and a published mobile application",
       text:
-        "MK Adisyon has two real product surfaces. The operational features below are verified in the working web system. A separate mobile application has been developed and is in closed testing; this study attributes only verified scope to it.",
+        "MK Adisyon has two real product surfaces. The operational features below are verified in the working web system. A separate Android application is published on Google Play, and the two surfaces are described distinctly.",
       parts: {
         web: {
           summary:
@@ -149,10 +149,10 @@ const en: Partial<Record<ProjectId, CaseStudyCopy>> = {
         },
         mobile: {
           summary:
-            "MK Adisyon's second developed product surface is its mobile application. It is in closed testing; this study does not extend its feature scope beyond the verified welcome screen.",
+            "MK Adisyon's second product surface is its Android application published on Google Play. Mobile operations and web management are presented as separate contexts.",
           highlights: [
             "A real, developed MK Adisyon product surface",
-            "Currently in closed testing",
+            "Published on Google Play",
             "A verified application address separate from the web system",
           ],
         },
@@ -168,8 +168,8 @@ const en: Partial<Record<ProjectId, CaseStudyCopy>> = {
         alt: "MK Adisyon responsive web waiter screen with sample table data",
       },
       "adisyon-mobile-app": {
-        caption: "Mobile application · Verified MK Adisyon welcome screen from the closed-test surface.",
-        alt: "Welcome screen of the MK Adisyon mobile application in closed testing",
+        caption: "Mobile application · MK Adisyon Android app published on Google Play.",
+        alt: "Welcome screen of the MK Adisyon mobile application published on Google Play",
       },
       "adisyon-kitchen": {
         caption: "Web application · Kitchen: orders as cards by table, round and station, marked waiting, preparing or ready.",

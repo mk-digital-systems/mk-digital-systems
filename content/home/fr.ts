@@ -56,7 +56,7 @@ const fr: HomeCopy = {
       {
         question: "Développez-vous des applications mobiles ?",
         answer:
-          "Oui. L’application mobile MK Adisyon est aujourd’hui en test fermé, et Aura est une application que nous avons conçue pour tenir un journal et suivre son humeur.",
+          "Oui. MK Adisyon et Aura Journal sont publiées sur Google Play ; chaque produit mobile dispose de sa propre page dans notre portfolio.",
       },
       {
         question: "Faites-vous du SEO ou des modifications WordPress sur un site existant ?",

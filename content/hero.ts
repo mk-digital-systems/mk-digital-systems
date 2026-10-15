@@ -17,16 +17,11 @@ export type HeroImage = { src: string; width: number; height: number };
 export const heroSlideIds = [
   "saha-santiye",
   "aura",
-  "mavi-sarkilar",
   "mk-adisyon",
   "kadraj-rotam",
-  "gonul-pusulasi",
-  "musty",
   "mk-farm",
   "mavi-kadraj-arsiv",
-  "aria",
   "namehub",
-  "mavi-kadraj-otel",
 ] as const;
 export type HeroSlideId = (typeof heroSlideIds)[number];
 export type HeroSlide = {
@@ -59,10 +54,13 @@ export const heroSlides: HeroSlide[] = [
   {
     id: "saha-santiye",
     project: "saha-santiye",
-    layout: "desktop-phone",
+    layout: "phones",
     need: "operations",
-    screens: [desktop("ops-approvals"), phone("saha-santiye-phone", 1120)],
-    logo: { src: "/hero/mkops.jpeg", width: 1024, height: 1024 },
+    screens: [
+      { src: "/work/mk-ops/mk-ops1.webp", width: 1080, height: 1920 },
+      { src: "/work/mk-ops/mk-ops4.webp", width: 1080, height: 1920 },
+      { src: "/work/mk-ops/mk-ops5.webp", width: 1080, height: 1920 },
+    ],
   },
   {
     id: "aura",
@@ -74,13 +72,6 @@ export const heroSlides: HeroSlide[] = [
       phone("aura-mood", 1212),
       phone("aura-calendar", 1212),
     ],
-  },
-  {
-    id: "mavi-sarkilar",
-    project: "mavi-sarkilar",
-    layout: "bleed",
-    need: "presence",
-    screens: [desktop("mavi-sarkilar")],
   },
   {
     id: "mk-adisyon",
@@ -95,24 +86,6 @@ export const heroSlides: HeroSlide[] = [
     layout: "bleed",
     need: "idea",
     screens: [desktop("kadraj-rotam")],
-  },
-  {
-    // The web experience, with a 9:16 typewriter story from "kendi hâlinde 1i".
-    id: "gonul-pusulasi",
-    project: "gonul-pusulasi",
-    layout: "layered",
-    need: "presence",
-    screens: [
-      desktop("gonul-pusulasi-web"),
-      { src: "/hero/gonul-pusulasi-story.webp", width: 560, height: 995 },
-    ],
-  },
-  {
-    id: "musty",
-    project: "musty",
-    layout: "bleed",
-    need: "presence",
-    screens: [desktop("musty")],
   },
   {
     id: "mk-farm",
@@ -133,25 +106,11 @@ export const heroSlides: HeroSlide[] = [
     ],
   },
   {
-    id: "aria",
-    project: "aria",
-    layout: "bleed",
-    need: "idea",
-    screens: [desktop("aria")],
-  },
-  {
     id: "namehub",
     project: "namehub",
     layout: "bleed",
     need: "idea",
     screens: [desktop("namehub")],
-  },
-  {
-    id: "mavi-kadraj-otel",
-    project: "mavi-kadraj-otel",
-    layout: "bleed",
-    need: "presence",
-    screens: [desktop("mavi-kadraj-otel")],
   },
 ];
 
@@ -166,23 +125,15 @@ export const heroBackdrop: HeroImage = { src: "/hero/mk.jpg", width: 1536, heigh
 export const heroRotation: HeroSlideId[] = [
   "saha-santiye",
   "aura",
-  "mavi-sarkilar",
   "mk-adisyon",
   "kadraj-rotam",
-  "gonul-pusulasi",
   "mk-farm",
   "mavi-kadraj-arsiv",
-  "musty",
+  "namehub",
 ];
 /** What each need chip brings forward. */
 export const heroNeedSlides: Record<NeedId, HeroSlideId[]> = {
   operations: ["saha-santiye", "mk-adisyon", "mk-farm"],
-  presence: [
-    "mavi-sarkilar",
-    "musty",
-    "mavi-kadraj-arsiv",
-    "gonul-pusulasi",
-    "mavi-kadraj-otel",
-  ],
-  idea: ["aura", "aria", "namehub", "kadraj-rotam"],
+  presence: ["mavi-kadraj-arsiv"],
+  idea: ["aura", "namehub", "kadraj-rotam"],
 };

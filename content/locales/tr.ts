@@ -36,15 +36,10 @@ const tr: SiteContent = {
     categories: {
       "saha-santiye": "Saha & şantiye operasyon sistemi",
       "aura": "Mobil günlük uygulaması",
-      "mavi-sarkilar": "Yaratıcı web deneyimi",
       "mk-adisyon": "Restoran & kafe yönetimi",
       "kadraj-rotam": "Fotoğraf rotaları platformu",
-      "musty": "Premium görsel web deneyimi",
       "mk-farm": "Çiftlik yönetim yazılımı",
-      "aria": "Sosyal platform arayüzü",
       "namehub": "İsim & dijital kimlik platformu",
-      "mavi-kadraj-otel": "Otel web sitesi",
-      "gonul-pusulasi": "Yaratıcı web & dijital içerik",
       "mavi-kadraj-arsiv": "Fotoğraf arşivi & web deneyimi",
     },
     tags: {

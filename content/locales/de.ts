@@ -36,15 +36,10 @@ const de: SiteContent = {
     categories: {
       "saha-santiye": "System für Außendienst & Baustellen",
       "aura": "Mobile Tagebuch-App",
-      "mavi-sarkilar": "Kreatives Web-Erlebnis",
       "mk-adisyon": "Restaurant- & Café-Management",
       "kadraj-rotam": "Plattform für Fotorouten",
-      "musty": "Visuelles Premium-Web-Erlebnis",
       "mk-farm": "Software für die Hofverwaltung",
-      "aria": "Oberfläche einer sozialen Plattform",
       "namehub": "Plattform für Namen & digitale Identität",
-      "mavi-kadraj-otel": "Hotel-Website",
-      "gonul-pusulasi": "Kreatives Web & digitale Inhalte",
       "mavi-kadraj-arsiv": "Fotoarchiv & Web-Erlebnis",
     },
     tags: {

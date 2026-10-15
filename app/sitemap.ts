@@ -17,6 +17,8 @@ import {
 import { caseStudyIds, caseStudyLocales } from "@/content/case-studies";
 import { solutionIds, solutionLocales, solutionRoutes } from "@/content/solutions";
 import { citySlug, hasServiceAreas, readyCities } from "@/content/cities";
+import { products } from "@/content/products";
+import { absoluteProductUrl, absoluteTopicUrl } from "@/lib/product-seo";
 export default function sitemap(): MetadataRoute.Sitemap {
   if (!isIndexable) return [];
   const pages = locales.flatMap((locale) =>
@@ -67,5 +69,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: turkishOnlyAlternates(cityUrl(citySlug(city.id))) },
     })),
   ];
-  return [...pages, ...solutions, ...cases, ...areas];
+  const productPages = products.flatMap((product) => {
+    const hubUrl = absoluteProductUrl(product);
+    return [
+      {
+        url: hubUrl,
+        changeFrequency: "weekly" as const,
+        priority: product.id === "mk-ops" ? 0.95 : 0.85,
+        alternates: { languages: turkishOnlyAlternates(hubUrl) },
+      },
+      ...product.topics.map((entry) => {
+        const url = absoluteTopicUrl(product, entry);
+        return {
+          url,
+          changeFrequency: "monthly" as const,
+          priority: product.id === "mk-ops" ? 0.85 : 0.75,
+          alternates: { languages: turkishOnlyAlternates(url) },
+        };
+      }),
+    ];
+  });
+  return [...pages, ...solutions, ...cases, ...productPages, ...areas];
 }

@@ -85,8 +85,8 @@ export const karaman: CityPage = {
       intro:
         "Bu projeler Karaman'daki işletmeler için yapılmadı. Sade arayüz, rol bazlı ekran ve günlük kayıt konularında nasıl çalıştığımızı gösteriyorlar.",
       projects: [
-        { id: "is-takip", note: "Günlük işlerin durumunu ve sorumlusunu tek yerde izleyen, az menülü, sade iş takip uygulaması." },
-        { id: "gunluk-imalat", note: "Üretim sahasındaki günlük kayıtları dijital karta dönüştüren uygulama." },
+        { id: "saha-santiye", note: "Proje, ekip ve saha kayıtlarını tek panelde toplayan MK OPS operasyon sistemi." },
+        { id: "mk-farm", note: "Tarımsal üretim kayıtlarını ve günlük operasyonları düzenleyen yönetim ürünü." },
         { id: "mk-adisyon", note: "Garson, mutfak ve kasa için ayrı ekranları olan sipariş sistemi; rol bazlı arayüzün örneği." },
       ],
     },

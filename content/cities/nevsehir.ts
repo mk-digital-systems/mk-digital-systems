@@ -76,7 +76,7 @@ export const nevsehir: CityPage = {
       intro: "Bu çalışmalar Nevşehir'de yapılmadı; ancak bir Kapadokya otelinin, restoranının ya da tur işletmesinin ihtiyacına çok yakın.",
       projects: [
         { id: "mk-resepsiyon", note: "Otel ve pansiyonlarda oda planını, misafir girişini ve tahsilatı bağlayan operasyon sistemi." },
-        { id: "mavi-kadraj-otel", note: "Oda sayfaları, galeri ve adım adım rezervasyon talebiyle otel sitesi örneği." },
+        { id: "mavi-kadraj-arsiv", note: "Doğa ve gezi fotoğraflarını konu odaklı sunan görsel içerik platformu." },
         { id: "mk-adisyon", note: "Garson, mutfak ve kasayı aynı akışta buluşturan adisyon ürünü." },
         { id: "kadraj-rotam", note: "Rotaları, saha notlarını ve keşif rehberlerini sunan platform; bir bölgenin deneyimini dijitalde anlatmanın örneği." },
       ],

@@ -91,8 +91,8 @@ export const yalova: CityPage = {
       intro: "Bu projeler Yalova'da yapılmış işler değil; saha ekibi, iş takibi ve konaklama konularında kurduğumuz sistemlerin örnekleri.",
       projects: [
         { id: "saha-santiye", note: "Birden fazla şirketin saha ekiplerini, işlerini ve onaylarını yönettiği operasyon sistemi; tersane taşeronlarının ihtiyacına benzer bir yapı." },
-        { id: "is-takip", note: "Görevlerin durumunu ve sorumlusunu tek yerde izleyen iş takip uygulaması." },
-        { id: "mavi-kadraj-otel", note: "Oda sayfaları ve rezervasyon talebi akışıyla otel ve pansiyon sitesi örneği." },
+        { id: "mk-farm", note: "Üretim ve gider kayıtlarını günlük tarımsal operasyonlarla birleştiren yönetim ürünü." },
+        { id: "mk-resepsiyon", note: "Oda planı, misafir girişi ve resepsiyon operasyonlarını yöneten konaklama çözümü." },
       ],
     },
     {

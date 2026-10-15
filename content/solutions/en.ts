@@ -282,7 +282,7 @@ const en: SolutionsCopy = {
       },
       work: {
         heading: "Real work",
-        text: "The MK Adisyon mobile app in closed testing and the Aura journaling app.",
+        text: "MK Adisyon, Aura Journal and Mavi Kadraj ile Öğreniyorum, published on Google Play.",
       },
       faq: {
         heading: "Frequently asked questions",
@@ -295,7 +295,7 @@ const en: SolutionsCopy = {
           {
             question: "Can the app be tried before it is released?",
             answer:
-              "Yes. The app can be tried in closed testing with a limited group of users before release; the MK Adisyon mobile app is at this stage today.",
+              "Yes. An app can be tried with a limited group before release. MK Adisyon has completed that stage and is now published on Google Play.",
           },
           {
             question: "How is the price of a mobile app set?",

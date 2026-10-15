@@ -72,9 +72,9 @@ export const bartin: CityPage = {
       intro:
         "Aşağıdaki çalışmalar Bartın'da yapılmadı; ancak Amasra'daki bir pansiyonun ya da restoranın ihtiyaçlarına çok yakın problemleri çözüyor.",
       projects: [
-        { id: "mavi-kadraj-otel", note: "Oda sayfaları, galeri ve adım adım rezervasyon talebiyle bir otel ve pansiyon sitesinin örneği." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
         { id: "mk-resepsiyon", note: "Oda planı, misafir girişi ve tahsilatı bağlayan resepsiyon sistemi." },
-        { id: "mavi-kafe", note: "Dijital menü, galeri ve rezervasyon akışıyla kafe ve restoran sitesi örneği." },
+        { id: "mk-adisyon", note: "Garson, mutfak, kasa ve web yönetimini aynı ürün çatısında buluşturan restoran çözümü." },
         { id: "kadraj-rotam", note: "Rotalar, saha notları ve keşif rehberleri sunan platform; bir yerin hikâyesini dijitalde anlatmanın örneği." },
       ],
     },

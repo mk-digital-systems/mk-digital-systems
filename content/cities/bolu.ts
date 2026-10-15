@@ -103,7 +103,7 @@ export const bolu: CityPage = {
       projects: [
         { id: "mk-resepsiyon", note: "Otel ve pansiyonlarda oda planını, girişleri ve tahsilatı birbirine bağlayan operasyon sistemi." },
         { id: "mk-adisyon", note: "Garson, mutfak ve kasayı aynı sipariş akışında buluşturan adisyon ürünü; kalabalık akşamlar düşünülerek tasarlandı." },
-        { id: "mavi-kadraj-otel", note: "Oda sayfaları ve adım adım rezervasyon akışıyla bir otel sitesinin nasıl kurgulanabileceğini gösteren örnek site." },
+        { id: "kadraj-rotam", note: "Rotaları, saha notlarını ve keşif rehberlerini sunan içerik platformu." },
         { id: "mk-farm", note: "Hayvan bazlı kayıtları günlük işlerle birleştiren uygulama; üretimde izlenebilirliği nasıl kurduğumuzun örneği." },
       ],
     },

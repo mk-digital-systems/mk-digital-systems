@@ -282,7 +282,7 @@ const fr: SolutionsCopy = {
       },
       work: {
         heading: "Réalisations",
-        text: "L’application mobile MK Adisyon en test fermé et l’application de journal Aura.",
+        text: "MK Adisyon, Aura Journal et Mavi Kadraj ile Öğreniyorum, publiées sur Google Play.",
       },
       faq: {
         heading: "Questions fréquentes",
@@ -295,7 +295,7 @@ const fr: SolutionsCopy = {
           {
             question: "Peut-on essayer l’application avant sa publication ?",
             answer:
-              "Oui. L’application peut être essayée en test fermé avec un petit groupe d’utilisateurs avant sa publication ; l’application mobile MK Adisyon en est à cette étape aujourd’hui.",
+              "Oui. Une application peut être testée avec un petit groupe avant sa publication. MK Adisyon a terminé cette étape et est publiée sur Google Play.",
           },
           {
             question: "Comment le prix d’une application mobile est-il établi ?",

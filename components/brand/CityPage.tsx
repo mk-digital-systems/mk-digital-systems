@@ -123,7 +123,10 @@ export function CityPageView({ city }: { city: CityPage }) {
             </div>
             <ul className="city-work-list">
               {b.projects.map(({ id: pid, note }) => {
-                const project = getProject(pid)!;
+                const project = getProject(pid);
+                // Historical service-area articles can mention former portfolio examples.
+                // Removed products are not rendered or linked from the public site.
+                if (!project) return null;
                 const copy = getProjectCopy("tr", pid);
                 const name = copy.name ?? project.name;
                 const story = getCaseStudy("tr", pid);

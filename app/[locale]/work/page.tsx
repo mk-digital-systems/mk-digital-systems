@@ -7,6 +7,7 @@ import { PageIntro } from "@/components/brand/PageIntro";
 import { ProjectStory } from "@/components/brand/ProjectStory";
 import { WorkCard } from "@/components/brand/WorkCard";
 import { WorkIndex } from "@/components/brand/WorkIndex";
+import { ProductPortfolioIntro } from "@/components/brand/ProductPages";
 type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props) {
   return pageMetadata(validLocale((await params).locale), "work");
@@ -28,6 +29,7 @@ export default async function Work({ params }: Props) {
         title={c.work.title}
         description={c.work.description}
       />
+      {locale === "tr" && <ProductPortfolioIntro />}
       <div className="work-page wrap">
         <WorkIndex
           label={c.work.filter}

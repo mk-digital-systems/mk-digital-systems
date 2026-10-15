@@ -53,6 +53,9 @@ export function SiteFooter({
             <Link href="/solutions">{copy.nav.solutions}</Link>
             <Link href="/work">{copy.nav.work}</Link>
             <Link href="/contact">{copy.nav.contact}</Link>
+            <a href={siteLinks.googlePlay} target="_blank" rel="noopener noreferrer">
+              {siteLinks.googlePlayLabel}
+            </a>
             {/* City pages are Turkish only: one link to their index, never a list of cities. */}
             {locale === "tr" && hasServiceAreas() && <Link href="/service-areas">{serviceAreasCopy.label}</Link>}
           </nav>

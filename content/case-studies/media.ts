@@ -22,9 +22,9 @@ const desktop = (id: string, src: string, part?: string): CaseScreen => ({ id, s
 
 export const caseStudyMedia: Partial<Record<ProjectId, CaseScreen[]>> = {
   "saha-santiye": [
-    desktop("ops-approvals", "/hero/ops-approvals.webp"),
-    { id: "ops-mobile", src: "/hero/saha-santiye-phone.webp", width: 560, height: 1120, frame: "phone" },
-    { ...desktop("ops-management", "/cases/mkops-management.webp"), featured: true },
+    { id: "ops-approvals", src: "/work/mk-ops/mk-ops3.webp", width: 1080, height: 1920, frame: "desktop" },
+    { id: "ops-mobile", src: "/work/mk-ops/mk-ops6.webp", width: 1080, height: 1920, frame: "phone" },
+    { id: "ops-management", src: "/work/mk-ops/mk-ops7.webp", width: 1080, height: 1920, frame: "phone", featured: true },
   ],
   "mk-adisyon": [
     desktop("adisyon-cashier", "/hero/adisyon-kasa.webp", "web"),

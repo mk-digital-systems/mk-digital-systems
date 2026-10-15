@@ -94,10 +94,10 @@ export const osmaniye: CityPage = {
       heading: "Bu soruları çözdüğümüz projeler",
       intro: "Osmaniye'de yapılmış işler değil; parti, sevkiyat ve saha takibinde kurabildiğimiz yapıları gösteren örnekler.",
       projects: [
-        { id: "mk-kargo", note: "Fiyat hesaplayan müşteri sitesi ve siparişleri yöneten operasyon paneliyle kargo ve lojistik ürünü." },
-        { id: "gunluk-imalat", note: "Günlük imalat kayıtlarını dijital karta dönüştüren uygulama; işleme hattında parti bazlı kayıt mantığı." },
-        { id: "mavi-yapi", note: "İki dilli B2B tedarik sitesi; ihracata dönük bir katalog ve teklif akışının örneği." },
-        { id: "is-takip", note: "Görevlerin durumunu ve sorumlusunu izleyen iş takip uygulaması." },
+        { id: "mk-farm", note: "Üretim ve gider kayıtlarını günlük tarımsal operasyonlarla birleştiren yönetim ürünü." },
+        { id: "saha-santiye", note: "Osmaniye'deki saha ekipleri için proje ve operasyon kayıtlarını tek panelde buluşturan MK OPS." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
+        { id: "mk-adisyon", note: "Mobil sipariş akışı ile web yönetim panelini birleştiren işletme ürünü." },
       ],
     },
     {

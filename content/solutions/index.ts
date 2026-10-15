@@ -31,9 +31,9 @@ export type SolutionRoute = (typeof solutionRoutes)[SolutionId];
  * `home` is the single example on the home overview and never repeats Selected Works.
  */
 export const solutionShowcase: Record<SolutionId, { home: ProjectId; page: ProjectId[] }> = {
-  web: { home: "mavi-gayrimenkul", page: ["mavi-gayrimenkul", "kadraj-rotam", "mavi-sarkilar", "mavi-kafe"] },
-  custom: { home: "santiye-yonetim", page: ["santiye-yonetim", "saha-santiye", "mk-farm", "kadraj-rotam"] },
-  business: { home: "is-takip", page: ["mk-adisyon", "mk-resepsiyon", "mk-pati", "is-takip"] },
+  web: { home: "namehub", page: ["namehub", "mavi-kadraj-arsiv", "kadraj-rotam"] },
+  custom: { home: "mavi-kadraj-arsiv", page: ["saha-santiye", "mk-farm", "kadraj-rotam"] },
+  business: { home: "mk-resepsiyon", page: ["saha-santiye", "mk-adisyon", "mk-farm", "mk-resepsiyon"] },
   mobile: { home: "aura", page: ["mk-adisyon", "aura"] },
 };
 

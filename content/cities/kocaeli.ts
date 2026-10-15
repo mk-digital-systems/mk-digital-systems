@@ -89,9 +89,9 @@ export const kocaeli: CityPage = {
       intro: "Bu projeler Kocaeli'deki bir firma için yapılmadı; ancak buradaki tedarikçi ve servis firmalarının yaşadığı operasyon sorunlarına çok yakın problemleri çözüyor.",
       projects: [
         { id: "saha-santiye", note: "Her şirketin saha ekiplerini, işlerini ve onaylarını kendi alanında yönettiği çok şirketli operasyon sistemi." },
-        { id: "gunluk-imalat", note: "Günlük imalat kayıtlarını dijital karta dönüştüren uygulama." },
-        { id: "is-takip", note: "Görevlerin durumunu ve sorumlusunu tek yerde izleyen iş takip uygulaması." },
-        { id: "mk-kargo", note: "Fiyat hesaplayan müşteri sitesi ve sipariş operasyon paneliyle lojistik ürünü." },
+        { id: "mk-farm", note: "Üretim ve gider kayıtlarını günlük operasyonlarla birleştiren tarımsal yönetim ürünü." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
+        { id: "mk-adisyon", note: "Mobil sipariş akışı ile web yönetim panelini birleştiren işletme ürünü." },
       ],
     },
     {

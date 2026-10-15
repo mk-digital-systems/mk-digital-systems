@@ -72,9 +72,9 @@ export const kilis: CityPage = {
       heading: "Örnek çalışmalar",
       intro: "Kilis'e özel işler değil; üreticinin vitrini, sipariş ve sevkiyat takibi için neler yapabildiğimizi gösteren örnekler.",
       projects: [
-        { id: "mavi-yapi", note: "Ürün kataloğu ve teklif formuyla kurgulanmış iki dilli B2B tedarik sitesi; toptan alıcıya hitap eden bir vitrin örneği." },
-        { id: "mk-kargo", note: "Fiyat hesaplayan müşteri sitesi ve siparişleri yöneten operasyon paneli; gönderi ve sevkiyat takibinin örneği." },
-        { id: "is-takip", note: "Günlük işlerin durumunu ve sorumlusunu tek yerde izleyen uygulama." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
+        { id: "saha-santiye", note: "Saha ekiplerini, projeleri ve operasyon kayıtlarını tek panelde buluşturan MK OPS." },
+        { id: "mk-farm", note: "Tarımsal işletme kayıtlarını ve günlük operasyonları düzenleyen yönetim ürünü." },
       ],
     },
     {

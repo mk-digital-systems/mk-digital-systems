@@ -11,6 +11,7 @@ import { Pricing } from "@/components/brand/Pricing";
 import { SelectedWorks } from "@/components/brand/SelectedWorks";
 import { SolutionsOverview } from "@/components/brand/SolutionsOverview";
 import { FinalCta, Founder, HomeFaq } from "@/components/brand/HomeSections";
+import { ApplicationsShowcase, ProductPortfolioIntro } from "@/components/brand/ProductPages";
 type Props = { params: Promise<{ locale: string }> };
 export async function generateMetadata({ params }: Props) {
   return pageMetadata(validLocale((await params).locale), "home");
@@ -29,6 +30,8 @@ export default async function HomePage({ params }: Props) {
       <JsonLd data={pageSchema(locale, "home")} />
       <Hero copy={c.hero} statuses={c.work.statuses} locale={locale} />
       <SelectedWorks copy={home.selectedWorks} c={c} locale={locale} />
+      {locale === "tr" && <ProductPortfolioIntro />}
+      {locale === "tr" && <ApplicationsShowcase />}
       <section className="section wrap home-solutions" aria-labelledby="home-solutions-title">
         <div className="section-head">
           <div>

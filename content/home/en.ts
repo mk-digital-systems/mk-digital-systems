@@ -56,7 +56,7 @@ const en: HomeCopy = {
       {
         question: "Do you build mobile apps?",
         answer:
-          "Yes. The MK Adisyon mobile app is in closed testing today, and Aura is an app we built for journaling and mood tracking.",
+          "Yes. MK Adisyon and Aura Journal are published on Google Play, and each mobile product has its own page in our corporate portfolio.",
       },
       {
         question: "Do you do SEO or WordPress work on existing sites?",

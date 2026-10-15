@@ -6,7 +6,7 @@ import { getContent } from "../content/site";
 import { heroBackdrop, heroNeedSlides, heroRotation, heroSlideIds, heroSlides } from "../content/hero";
 
 test("every hero slide has its images and copy in every locale", () => {
-  expect(heroSlides.map((s) => s.id)).toEqual([...heroSlideIds]);
+  expect(heroSlides.map((s) => s.id)).toEqual(heroRotation);
   for (const slide of heroSlides)
     for (const image of [...slide.screens, ...(slide.logo ? [slide.logo] : [])])
       expect(existsSync(join("public", image.src)), image.src).toBe(true);

@@ -97,8 +97,8 @@ export const eskisehir: CityPage = {
       projects: [
         { id: "aura", note: "Günlük tutma ve ruh hâli takibi için sade bir mobil uygulama; küçük kapsamla başlayan bir ürünün örneği." },
         { id: "namehub", note: "Bebek, evcil hayvan, marka ve kullanıcı adı önerileri sunan isim bulma platformu; bir fikirden dijital ürüne." },
-        { id: "mk-adisyon", note: "Web uygulaması ve kapalı testteki mobil uygulamasıyla restoran ve kafeler için sipariş ürünü." },
-        { id: "mk-pati", note: "Veteriner klinikleri için hasta, aşı ve randevu yönetimi; yapay zekâ destekli klinik danışmanıyla." },
+        { id: "mk-adisyon", note: "Web yönetim sistemi ve Google Play'de yayınlanan mobil uygulamasıyla restoran ve kafeler için sipariş ürünü." },
+        { id: "mavi-kadraj-arsiv", note: "Fotoğraf arşivini konu ve kategori odaklı sunan görsel içerik platformu." },
       ],
     },
     {

@@ -26,6 +26,7 @@ export const pathnames = {
   // City pages (content/cities) are Turkish only; other locales 404 on both routes.
   "/service-areas": { tr: "/hizmet-bolgeleri" },
   "/[area]": "/[area]",
+  "/[area]/[topic]": "/[area]/[topic]",
 } as const;
 
 export const routing = defineRouting({

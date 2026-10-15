@@ -89,10 +89,10 @@ export const edirne: CityPage = {
       heading: "İlgili projelerimiz",
       intro: "Bu projeler Edirne'de yapılmadı; lojistik, konaklama ve restoran tarafında kurabildiğimiz yapıları gösteriyor.",
       projects: [
-        { id: "mk-kargo", note: "Fiyat hesaplayan müşteri sitesi ve siparişleri yöneten operasyon paneliyle kargo ve lojistik ürünü." },
-        { id: "mavi-kadraj-otel", note: "Oda sayfaları, galeri ve rezervasyon talebiyle otel sitesi örneği." },
+        { id: "saha-santiye", note: "Saha ekiplerini, projeleri ve operasyon kayıtlarını tek panelde buluşturan MK OPS." },
+        { id: "mk-resepsiyon", note: "Oda planı, misafir girişi ve resepsiyon operasyonlarını yöneten konaklama çözümü." },
         { id: "mk-adisyon", note: "Garson, mutfak ve kasayı bağlayan adisyon ürünü; yoğun dönemler için tasarlandı." },
-        { id: "mavi-gayrimenkul", note: "İlan arama, bölge rehberi ve değerleme talebiyle emlak ofisi sitesi örneği; şehir bilgisini sitede kullanmanın bir yolu." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
       ],
     },
     {

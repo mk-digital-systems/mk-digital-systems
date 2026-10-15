@@ -282,7 +282,7 @@ const de: SolutionsCopy = {
       },
       work: {
         heading: "Echte Arbeit",
-        text: "Die mobile App von MK Adisyon im geschlossenen Test und die Tagebuch-App Aura.",
+        text: "MK Adisyon, Aura Tagebuch und Mavi Kadraj ile Öğreniyorum, veröffentlicht bei Google Play.",
       },
       faq: {
         heading: "Häufige Fragen",
@@ -295,7 +295,7 @@ const de: SolutionsCopy = {
           {
             question: "Kann die App vor der Veröffentlichung ausprobiert werden?",
             answer:
-              "Ja. Die App kann vor der Veröffentlichung mit einer kleinen Nutzergruppe im geschlossenen Test erprobt werden; die mobile App von MK Adisyon ist heute in dieser Phase.",
+              "Ja. Eine App kann vor der Veröffentlichung mit einer kleinen Nutzergruppe getestet werden. MK Adisyon hat diese Phase abgeschlossen und ist bei Google Play veröffentlicht.",
           },
           {
             question: "Wie entsteht der Preis einer mobilen App?",

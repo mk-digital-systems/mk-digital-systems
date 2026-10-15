@@ -91,10 +91,10 @@ export const bursa: CityPage = {
       heading: "Bursa'nın ihtiyaçlarına yakın çalışmalarımız",
       intro: "Bursa'daki bir müşteriye ait işler değil; üretim, saha ve katalog konularında neler kurabildiğimizi gösteren örnekler.",
       projects: [
-        { id: "gunluk-imalat", note: "Günlük imalat kayıtlarını dijital bir karta dönüştüren uygulama." },
+        { id: "mk-farm", note: "Üretim kayıtlarını ve günlük tarımsal operasyonları düzenleyen yönetim ürünü." },
         { id: "saha-santiye", note: "Birden fazla şirketin ekiplerini ve işlerini kendi alanında yönettiği operasyon sistemi; fason atölye ağlarına uyarlanabilir yapı." },
-        { id: "mavi-yapi", note: "Katalog ve teklif formuyla iki dilli B2B tedarik sitesi örneği." },
-        { id: "mavi-iletisim", note: "Ürün kataloğu, sepet ve servis talebiyle mağaza sitesi örneği; çarşıdaki bir işletmenin dijital vitrinine benzer." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
+        { id: "mavi-kadraj-arsiv", note: "Fotoğraf arşivini konu ve kategori odaklı sunan görsel içerik platformu." },
       ],
     },
     {

@@ -39,6 +39,13 @@ const nextConfig = withNextIntl({
         destination: "https://www.mk-digitalsystems.com/:path*",
         statusCode: 301,
       },
+      // Retired portfolio pages with a genuinely equivalent current MK OPS destination.
+      { source: "/tr/calismalar/santiye-yonetim", destination: "/tr/mk-ops", statusCode: 301 },
+      { source: "/tr/calismalar/proje-asama-takip", destination: "/tr/mk-ops/proje-yonetim-yazilimi", statusCode: 301 },
+      { source: "/tr/calismalar/onayli-proje-takip", destination: "/tr/mk-ops/proje-yonetim-yazilimi", statusCode: 301 },
+      { source: "/tr/work/santiye-yonetim", destination: "/tr/mk-ops", statusCode: 301 },
+      { source: "/tr/work/proje-asama-takip", destination: "/tr/mk-ops/proje-yonetim-yazilimi", statusCode: 301 },
+      { source: "/tr/work/onayli-proje-takip", destination: "/tr/mk-ops/proje-yonetim-yazilimi", statusCode: 301 },
       ...Object.entries(turkish).map(([source, destination]) => ({ source, destination, statusCode: 301 })),
       { source: "/tr/work/:slug", destination: "/tr/calismalar/:slug", statusCode: 301 },
       { source: "/:locale(tr|en|de|fr)/services", destination: "/:locale/solutions", permanent: true },

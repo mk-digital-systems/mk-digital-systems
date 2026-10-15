@@ -7,6 +7,7 @@ import { localPath, type Route } from "./paths";
 import * as caseStudies from "../content/case-studies";
 import * as solutions from "../content/solutions";
 import * as cities from "../content/cities";
+import * as productContent from "../content/products";
 import { getSolutionsCopy } from "../content/solutions";
 const widths = [360, 375, 390, 430, 768, 1024, 1440];
 const pages: Route[] = ["/", "/solutions", "/work", "/contact"];
@@ -173,10 +174,11 @@ test("form validation and reduced motion are available", async ({ page }) => {
   );
   await expect(page.locator("#name")).toBeFocused();
   await page.goto("/fr");
-  // The hero's floating phone stays still for reduced motion.
+  // The active hero artwork stays still for reduced motion, independent of its layout.
   expect(
     await page
-      .locator(".stage-slide.is-active .phone-side")
+      .locator(".stage-slide.is-active .phone-frame")
+      .first()
       .evaluate((el) => getComputedStyle(el).animationName),
   ).toBe("none");
   await page.keyboard.press("Tab");
@@ -356,7 +358,11 @@ test("configured production sitemap and preview exclusion", () => {
   }
   const env = {SITE_URL: "https://agency.example", VERCEL_ENV: "production"};
   const config = load("lib/site-config.ts", {"@/config/i18n": {locales, defaultLocale: "tr", pathnames}}, env);
-  const dependencies = {"@/config/i18n": {locales, defaultLocale: "tr"}, "@/lib/site-config": config, "@/content/case-studies": caseStudies, "@/content/solutions": solutions, "@/content/cities": cities};
+  const productSeo = {
+    absoluteProductUrl: (product: {id: string}) => `${config.SITE_URL}/tr/${product.id}`,
+    absoluteTopicUrl: (product: {id: string}, topic: {slug: string}) => `${config.SITE_URL}/tr/${product.id}/${topic.slug}`,
+  };
+  const dependencies = {"@/config/i18n": {locales, defaultLocale: "tr"}, "@/lib/site-config": config, "@/content/case-studies": caseStudies, "@/content/solutions": solutions, "@/content/cities": cities, "@/content/products": productContent, "@/lib/product-seo": productSeo};
   const sitemap = load("app/sitemap.ts", dependencies, env).default();
   const caseEntries = caseStudies.caseStudyIds.reduce((n, id) => n + caseStudies.caseStudyLocales(id).length, 0);
   // Solution pages exist only in written languages; each lists exactly those plus x-default.
@@ -365,9 +371,15 @@ test("configured production sitemap and preview exclusion", () => {
   expect(solutionEntries).toBeGreaterThan(0);
   // Turkish-only: the service-areas index plus every published city (hero image in place).
   const areaEntries = cities.hasServiceAreas() ? 1 + cities.readyCities().length : 0;
-  expect(sitemap).toHaveLength(24 + caseEntries + solutionEntries + areaEntries);
-  expect(new Set(sitemap.map((entry: {url:string}) => entry.url)).size).toBe(24 + caseEntries + solutionEntries + areaEntries);
-  const turkishOnly = new Set([config.serviceAreasUrl(), ...cities.readyCities().map((city) => config.cityUrl(cities.citySlug(city.id)))]);
+  const productEntries = productContent.products.reduce((count, product) => count + 1 + product.topics.length, 0);
+  const expectedEntries = 24 + caseEntries + solutionEntries + productEntries + areaEntries;
+  expect(sitemap).toHaveLength(expectedEntries);
+  expect(new Set(sitemap.map((entry: {url:string}) => entry.url)).size).toBe(expectedEntries);
+  const productUrls = productContent.products.flatMap((product) => [
+    productSeo.absoluteProductUrl(product),
+    ...product.topics.map((topic) => productSeo.absoluteTopicUrl(product, topic)),
+  ]);
+  const turkishOnly = new Set([config.serviceAreasUrl(), ...cities.readyCities().map((city) => config.cityUrl(cities.citySlug(city.id))), ...productUrls]);
   const solutionUrls = new Set(solutions.solutionIds.flatMap((id) => written.map((l) => config.solutionUrl(l, solutions.solutionRoutes[id]))));
   for (const entry of sitemap) {
     expect(entry.url).toMatch(/^https:\/\/agency\.example\/(tr|en|de|fr)(\/|$)/);
@@ -378,6 +390,7 @@ test("configured production sitemap and preview exclusion", () => {
   }
   expect(solutionUrls.has("https://agency.example/tr/cozumler/mobil-uygulama")).toBe(true);
   for (const url of solutionUrls) expect(sitemap.map((entry: {url:string}) => entry.url)).toContain(url);
+  for (const url of productUrls) expect(sitemap.map((entry: {url:string}) => entry.url)).toContain(url);
   const urls = sitemap.map((entry: {url:string}) => entry.url);
   expect(urls).toContain("https://agency.example/tr/calismalar");
   expect(urls).toContain("https://agency.example/tr/yasal/gizlilik");

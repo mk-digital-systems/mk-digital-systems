@@ -36,15 +36,10 @@ const en: SiteContent = {
     categories: {
       "saha-santiye": "Field & site operations system",
       "aura": "Mobile journaling app",
-      "mavi-sarkilar": "Creative web experience",
       "mk-adisyon": "Restaurant & café management",
       "kadraj-rotam": "Photo route platform",
-      "musty": "Premium visual web experience",
       "mk-farm": "Farm management software",
-      "aria": "Social platform interface",
       "namehub": "Name & digital identity platform",
-      "mavi-kadraj-otel": "Hotel website",
-      "gonul-pusulasi": "Creative web & digital content",
       "mavi-kadraj-arsiv": "Photo archive & web experience",
     },
     tags: {

@@ -31,9 +31,9 @@ test("Selected Works: case studies with screens the hero does not use, then live
     expect(heroScreens.has(screen.src), `${project.id} repeats a hero screen`).toBe(false);
   }
   const others = otherSystems().map((p) => p.id);
-  expect(others).toEqual(["mk-resepsiyon", "mk-pati"]);
+  expect(others).toEqual(["mk-resepsiyon"]);
   // No public link, no status or confidential: never on the home page.
-  for (const hidden of ["mk-kargo", "santiye-yonetim", "proje-asama-takip", "onayli-proje-takip"])
+  for (const hidden of ["mk-pati", "mk-kargo", "santiye-yonetim", "proje-asama-takip", "onayli-proje-takip"])
     expect(others).not.toContain(hidden);
 });
 

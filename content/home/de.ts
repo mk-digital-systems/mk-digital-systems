@@ -56,7 +56,7 @@ const de: HomeCopy = {
       {
         question: "Entwickeln Sie mobile Apps?",
         answer:
-          "Ja. Die mobile App von MK Adisyon ist derzeit im geschlossenen Test, und Aura ist eine App, die wir für Tagebuch und Stimmungsverlauf entwickelt haben.",
+          "Ja. MK Adisyon und Aura Tagebuch sind bei Google Play veröffentlicht; jedes mobile Produkt hat eine eigene Seite in unserem Portfolio.",
       },
       {
         question: "Übernehmen Sie SEO oder WordPress-Arbeiten an bestehenden Websites?",

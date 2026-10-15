@@ -97,9 +97,9 @@ export const duzce: CityPage = {
       intro:
         "Bu projeler Düzce'deki bir işletme için yapılmadı; üretim, iş takibi ve B2B vitrin gibi Düzce'de karşılığı olan konulardaki yetkinliğimizi gösteriyor.",
       projects: [
-        { id: "gunluk-imalat", note: "Üretim sahasındaki günlük imalat kayıtlarını dijital bir karta dönüştüren uygulama; vardiya bazlı kayıt mantığının örneği." },
-        { id: "is-takip", note: "Günlük işlerin durumunu ve sorumlusunu tek yerde izleyen iş takip uygulaması." },
-        { id: "mavi-yapi", note: "Ürün kataloğu, kategori sayfaları ve teklif formuyla iki dilli bir B2B tedarik sitesi örneği." },
+        { id: "saha-santiye", note: "Proje, ekip ve saha kayıtlarını tek panelde toplayan MK OPS operasyon sistemi." },
+        { id: "mk-farm", note: "Tarımsal üretim kayıtlarını ve günlük operasyonları düzenleyen yönetim ürünü." },
+        { id: "namehub", note: "Geniş içerik yapısını arama ve keşif akışlarıyla sunan web platformu örneği." },
       ],
     },
     {

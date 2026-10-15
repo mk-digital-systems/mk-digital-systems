@@ -69,7 +69,7 @@ export const yozgat: CityPage = {
       projects: [
         { id: "mk-farm", note: "Hayvanların bireysel kayıtlarını çiftliğin günlük işleriyle birleştiren yönetim uygulaması; Yozgat'taki bir hayvancılık işletmesinin ihtiyaçlarına en yakın örneğimiz." },
         { id: "mk-resepsiyon", note: "Oda planı, misafir girişi ve tahsilatı bağlayan resepsiyon sistemi; termal tesisler için uyarlanabilir." },
-        { id: "santiye-yonetim", note: "Günlük ekip planı, iş ve puantajı izleyen yönetim sistemi; sahada çalışan ekiplerin takibinin örneği." },
+        { id: "saha-santiye", note: "Günlük ekip planı, personel ve saha kayıtlarını izleyen MK OPS operasyon sistemi." },
       ],
     },
     {

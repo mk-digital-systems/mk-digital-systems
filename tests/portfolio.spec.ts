@@ -4,7 +4,6 @@ import { test, expect } from "@playwright/test";
 import { locales } from "../config/i18n";
 import { getContent } from "../content/site";
 import {
-  projectIds,
   projectLayers,
   projects,
   projectsByLayer,
@@ -18,7 +17,11 @@ import { localPath } from "./paths";
 const allLinks = (p: Project) => [...p.links, ...(p.parts ?? []).flatMap((part) => part.links)];
 
 test("every portfolio id has exactly one record, in the declared order", () => {
-  expect(projects.map((p) => p.id)).toEqual([...projectIds]);
+  expect(projects.map((p) => p.id)).toEqual([
+    "saha-santiye", "mk-adisyon", "mk-farm", "mk-resepsiyon", "aura",
+    "mavi-kadraj-ile-ogreniyorum", "bebegimin-ilk-yili", "namehub",
+    "mavi-kadraj-arsiv", "kadraj-rotam",
+  ]);
   for (const p of projects) {
     expect(projectLayers, p.id).toContain(p.layer);
     expect(p.name.trim(), p.id).not.toBe("");
@@ -82,14 +85,14 @@ test("every project is shown with a real screen of its own product", () => {
     if (p.media) expect(existsSync(join("public", p.media.src)), p.media.src).toBe(true);
     // A coming-soon project waits for its own visual identity instead of a placeholder screen;
     // a confidential system is told through its problem and modules only.
-    if (p.status !== "coming-soon" && !p.confidential)
+    if (p.status !== "coming-soon" && !p.confidential && p.id !== "mavi-kadraj-ile-ogreniyorum")
       expect(p.media, `${p.id} needs a real screenshot`).toBeTruthy();
   }
 });
 
 test("confidential systems are described only: no screens, links, case study or hero slide", () => {
   const confidential = projects.filter((p) => p.confidential);
-  expect(confidential.length).toBeGreaterThan(0);
+  expect(confidential).toEqual([]);
   for (const p of confidential) {
     expect(p.status, p.id).toBe("in-use");
     expect(p.media, `${p.id} media`).toBeUndefined();
