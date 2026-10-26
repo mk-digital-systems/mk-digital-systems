@@ -30,7 +30,7 @@ export const caseStudyMedia: Partial<Record<ProjectId, CaseScreen[]>> = {
     desktop("adisyon-cashier", "/hero/adisyon-kasa.webp", "web"),
     { id: "adisyon-waiter", src: "/hero/adisyon-garson.webp", width: 560, height: 1212, frame: "phone", part: "web" },
     { ...desktop("adisyon-kitchen", "/cases/adisyon-kitchen.webp", "web"), featured: true },
-    { id: "adisyon-mobile-app", src: "/cases/adisyon-mobile-app.webp", width: 390, height: 844, frame: "phone", part: "mobile" },
+    { id: "adisyon-mobile-app", src: "/cases/adisyon-mobile-tables.webp", width: 1080, height: 1920, frame: "phone", part: "mobile" },
   ],
   "mk-farm": [
     { ...desktop("farm-dashboard", "/cases/farm-dashboard.webp"), featured: true },

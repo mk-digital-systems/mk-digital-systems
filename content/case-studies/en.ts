@@ -168,8 +168,8 @@ const en: Partial<Record<ProjectId, CaseStudyCopy>> = {
         alt: "MK Adisyon responsive web waiter screen with sample table data",
       },
       "adisyon-mobile-app": {
-        caption: "Mobile application · MK Adisyon Android app published on Google Play.",
-        alt: "Welcome screen of the MK Adisyon mobile application published on Google Play",
+        caption: "Mobile application · Floor view showing available, occupied and bill-requested tables at a glance.",
+        alt: "Floor view in the MK Adisyon Android application showing sample table statuses",
       },
       "adisyon-kitchen": {
         caption: "Web application · Kitchen: orders as cards by table, round and station, marked waiting, preparing or ready.",

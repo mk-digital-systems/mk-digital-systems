@@ -57,7 +57,7 @@ test("every project is described in every locale; flagship copy is complete", ()
 
 // What each label promises must be backed by the data.
 // Live demo and sample site need something public to open.
-const needsPublicLink: ProjectStatus[] = ["live-demo", "sample-site"];
+const needsPublicLink: ProjectStatus[] = ["live-demo", "published", "sample-site"];
 test("status rules: links are HTTPS and every label is backed by the data", () => {
   for (const p of projects) {
     const links = allLinks(p);
@@ -80,12 +80,36 @@ test("status rules: links are HTTPS and every label is backed by the data", () =
   for (const p of projectsByLayer("sector-demo")) expect(p.status, p.id).toBe("sample-site");
 });
 
+test("Bebeğimin İlk Yılı opens its published Google Play listing", async ({ page }) => {
+  const project = projects.find((p) => p.id === "bebegimin-ilk-yili")!;
+  expect(project.status).toBe("published");
+  expect(allLinks(project)).toContainEqual({
+    kind: "app",
+    url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.bebegimin_ilk_yili",
+  });
+  await page.goto(localPath("tr", "/work"));
+  const card = page.locator("#bebegimin-ilk-yili");
+  await expect(card.locator(".project-status")).toHaveText("Yayında");
+  await expect(card.locator(".work-card-media img")).toHaveAttribute(
+    "src",
+    /bebegimin-ilk-yili\.webp/,
+  );
+  await expect(card.locator("a")).toHaveAttribute(
+    "href",
+    "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.bebegimin_ilk_yili",
+  );
+});
+
 test("every project is shown with a real screen of its own product", () => {
   for (const p of projects) {
     if (p.media) expect(existsSync(join("public", p.media.src)), p.media.src).toBe(true);
     // A coming-soon project waits for its own visual identity instead of a placeholder screen;
     // a confidential system is told through its problem and modules only.
-    if (p.status !== "coming-soon" && !p.confidential && p.id !== "mavi-kadraj-ile-ogreniyorum")
+    if (
+      p.status !== "coming-soon" &&
+      !p.confidential &&
+      p.id !== "mavi-kadraj-ile-ogreniyorum"
+    )
       expect(p.media, `${p.id} needs a real screenshot`).toBeTruthy();
   }
 });

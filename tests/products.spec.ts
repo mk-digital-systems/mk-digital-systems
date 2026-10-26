@@ -47,7 +47,16 @@ test("published Android products use verified Google Play links", () => {
   expect(links["mk-adisyon"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.adisyon");
   expect(links["aura-gunluk"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.aura");
   expect(links["mavi-kadraj-ile-ogreniyorum"]).toContain("https://play.google.com/store/apps/details?id=com.mavikadaj.learn");
-  expect(links["bebegimin-ilk-yili"]).toEqual([]);
+  expect(links["bebegimin-ilk-yili"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.bebegimin_ilk_yili");
+});
+
+test("product lists, feature cards and topic cards do not show ordinal numbers", async ({ page }) => {
+  await page.goto("/tr/calismalar");
+  await expect(page.locator(".portfolio-product-list > a > span")).toHaveCount(0);
+
+  await page.goto("/tr/mk-resepsiyon");
+  await expect(page.locator(".product-feature-grid li > span")).toHaveCount(0);
+  await expect(page.locator(".product-topic-grid article > span")).toHaveCount(0);
 });
 
 test("every product hub and intent page renders canonical metadata and one H1", async ({ page, request }) => {

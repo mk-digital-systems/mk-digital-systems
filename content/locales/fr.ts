@@ -65,6 +65,7 @@ const fr: SiteContent = {
       "Un système en service ; captures et liens ne sont pas partagés par confidentialité.",
     statuses: {
       "live-demo": "Démo en ligne",
+      "published": "Publiée",
       "closed-test": "Test fermé",
       "sample-site": "Site d’exemple",
       "in-use": "En utilisation active",

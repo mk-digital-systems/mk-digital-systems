@@ -168,8 +168,8 @@ const fr: Partial<Record<ProjectId, CaseStudyCopy>> = {
         alt: "Écran responsive de service MK Adisyon avec tables d'exemple",
       },
       "adisyon-mobile-app": {
-        caption: "Application mobile · Application Android MK Adisyon publiée sur Google Play.",
-        alt: "Écran d'accueil de l'application mobile MK Adisyon publiée sur Google Play",
+        caption: "Application mobile · Vue de salle indiquant en un coup d’œil les tables libres, occupées et demandant l’addition.",
+        alt: "Vue de salle de l’application Android MK Adisyon avec des états de tables d’exemple",
       },
       "adisyon-kitchen": {
         caption: "Application web · Cuisine : les commandes en cartes par table, tour et poste, marquées en attente, en préparation ou prêtes.",

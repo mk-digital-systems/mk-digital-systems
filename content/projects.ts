@@ -1,6 +1,6 @@
 /** Public portfolio source of truth. Only the ten approved MK Digital Systems products live here. */
 export type ProjectLayer = "flagship" | "selected" | "sector-demo";
-export type ProjectStatus = "live-demo" | "closed-test" | "sample-site" | "in-use" | "coming-soon";
+export type ProjectStatus = "live-demo" | "published" | "closed-test" | "sample-site" | "in-use" | "coming-soon";
 export type ServiceId = "web" | "custom" | "business" | "mobile" | "smart";
 export type SectorId =
   | "field-operations" | "restaurant" | "agriculture" | "hospitality" | "veterinary"
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     id: "mk-adisyon", name: "MK Adisyon", layer: "flagship", status: "live-demo",
     services: ["business", "mobile"], sectors: ["restaurant"], needs: ["operations"],
-    cardType: "system", scene: "blue", media: { src: "/work/mk-adisyon.webp", frame: "desktop" },
+    cardType: "system", scene: "blue", media: { src: "/cases/adisyon-mobile-tables.webp", frame: "phone" },
     links: [{ kind: "app", url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.adisyon" }],
     parts: [
       { id: "web", status: "live-demo", links: [{ kind: "demo", url: "https://adisyonn.vercel.app" }] },
@@ -79,8 +79,10 @@ export const projects: Project[] = [
     links: [{ kind: "app", url: "https://play.google.com/store/apps/details?id=com.mavikadaj.learn" }],
   },
   {
-    id: "bebegimin-ilk-yili", name: "Bebeğimin İlk Yılı", layer: "selected", status: "coming-soon",
-    services: ["mobile"], sectors: ["lifestyle"], needs: ["idea"], cardType: "experience", scene: "paper", links: [],
+    id: "bebegimin-ilk-yili", name: "Bebeğimin İlk Yılı", layer: "selected", status: "published",
+    services: ["mobile"], sectors: ["lifestyle"], needs: ["idea"], cardType: "experience", scene: "paper",
+    media: { src: "/work/bebegimin-ilk-yili.webp", frame: "phone" },
+    links: [{ kind: "app", url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.bebegimin_ilk_yili" }],
   },
   {
     id: "namehub", name: "Namehub", layer: "selected", status: "live-demo",

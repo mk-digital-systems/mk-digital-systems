@@ -65,6 +65,7 @@ const tr: SiteContent = {
       "Aktif kullanımdaki bir sistem; gizlilik nedeniyle ekran görüntüsü ve bağlantı paylaşılmıyor.",
     statuses: {
       "live-demo": "Canlı demo",
+      "published": "Yayında",
       "closed-test": "Kapalı test",
       "sample-site": "Örnek site",
       "in-use": "Aktif kullanımda",

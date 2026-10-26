@@ -65,6 +65,7 @@ const en: SiteContent = {
       "A system in active use; screens and links are not shared for confidentiality.",
     statuses: {
       "live-demo": "Live demo",
+      "published": "Published",
       "closed-test": "Closed testing",
       "sample-site": "Sample site",
       "in-use": "In active use",

@@ -168,8 +168,8 @@ const tr: Partial<Record<ProjectId, CaseStudyCopy>> = {
         alt: "MK Adisyon responsive web garson ekranı, örnek masa verileriyle",
       },
       "adisyon-mobile-app": {
-        caption: "Mobil uygulama · Google Play'de yayınlanan MK Adisyon Android uygulaması.",
-        alt: "Google Play'de yayınlanan MK Adisyon mobil uygulamasının karşılama ekranı",
+        caption: "Mobil uygulama · Boş, dolu ve hesap isteyen masaların tek bakışta görüldüğü salon ekranı.",
+        alt: "MK Adisyon Android uygulamasında örnek masaların durumlarını gösteren salon ekranı",
       },
       "adisyon-kitchen": {
         caption: "Web uygulaması · Mutfak: siparişler masa, tur ve istasyona göre kartlarda; bekliyor, hazırlanıyor ve hazır durumlarıyla.",

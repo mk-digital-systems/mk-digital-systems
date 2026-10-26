@@ -82,8 +82,8 @@ export function ProductHubView({ product }: { product: Product }) {
           <p className="section-description">{product.description}</p>
         </div>
         <ul className="product-feature-grid">
-          {product.verifiedFeatures.map((feature, index) => (
-            <li key={feature}><span>{String(index + 1).padStart(2, "0")}</span>{feature}</li>
+          {product.verifiedFeatures.map((feature) => (
+            <li key={feature}>{feature}</li>
           ))}
         </ul>
         {product.limitations && <p className="product-limit"><strong>Doğrulama notu:</strong> {product.limitations}</p>}
@@ -120,9 +120,8 @@ export function ProductHubView({ product }: { product: Product }) {
           <p className="section-description">Her rehber ayrı bir arama niyetini ele alır; aynı metin farklı başlıklarla çoğaltılmaz.</p>
         </div>
         <div className="product-topic-grid">
-          {product.topics.map((entry, index) => (
+          {product.topics.map((entry) => (
             <article key={entry.slug}>
-              <span>{String(index + 1).padStart(2, "0")}</span>
               <p className="eyebrow">{entry.intent}</p>
               <h3>{entry.title}</h3>
               <p>{entry.description}</p>
@@ -257,7 +256,6 @@ export function ProductPortfolioIntro() {
       <div className="portfolio-product-list">
         {products.map((product, index) => (
           <Link key={product.id} href={{ pathname: "/[area]", params: { area: product.id } }} className={index === 0 ? "is-flagship" : ""}>
-            <span>{String(index + 1).padStart(2, "0")}</span>
             <div><p className="eyebrow">{product.category}</p><h3>{product.name}</h3><p>{product.summary}</p></div>
             <Arrow />
           </Link>
@@ -284,8 +282,8 @@ export function ApplicationsShowcase() {
     <section className="section applications-showcase" aria-labelledby="applications-title">
       <div className="wrap">
         <div className="section-head">
-          <div><p className="eyebrow">UYGULAMALARIMIZ</p><h2 id="applications-title">Google Play’de yayınlanan ürünler ve sıradaki uygulamamız.</h2></div>
-          <p className="section-description">MK Adisyon, Aura Günlük ve Mavi Kadraj ile Öğreniyorum yayında. Bebeğimin İlk Yılı geliştirme aşamasındadır.</p>
+          <div><p className="eyebrow">UYGULAMALARIMIZ</p><h2 id="applications-title">Google Play’de yayınlanan uygulamalarımız.</h2></div>
+          <p className="section-description">MK Adisyon, Aura Günlük, Mavi Kadraj ile Öğreniyorum ve Bebeğimin İlk Yılı Google Play’de yayında.</p>
         </div>
         <div className="application-grid">
           {applications.map((product) => {

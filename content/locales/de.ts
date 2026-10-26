@@ -65,6 +65,7 @@ const de: SiteContent = {
       "Ein aktiv genutztes System; aus Vertraulichkeitsgründen ohne Screenshots und Links.",
     statuses: {
       "live-demo": "Live-Demo",
+      "published": "Veröffentlicht",
       "closed-test": "Geschlossener Test",
       "sample-site": "Beispielseite",
       "in-use": "Im aktiven Einsatz",

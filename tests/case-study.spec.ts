@@ -29,6 +29,7 @@ test("case study copy is complete and never reads like a sales page", () => {
 test("MK Adisyon keeps its live web and published mobile surfaces distinct", () => {
   const project = getProject("mk-adisyon")!;
   expect(project.name).toBe("MK Adisyon");
+  expect(project.media).toEqual({ src: "/cases/adisyon-mobile-tables.webp", frame: "phone" });
   expect(project.parts).toEqual(
     expect.arrayContaining([
       expect.objectContaining({ id: "web", status: "live-demo" }),
@@ -42,7 +43,7 @@ test("MK Adisyon keeps its live web and published mobile surfaces distinct", () 
   expect(caseStudyScreens("mk-adisyon")).toEqual(
     expect.arrayContaining([
       expect.objectContaining({ id: "adisyon-waiter", part: "web" }),
-      expect.objectContaining({ id: "adisyon-mobile-app", part: "mobile" }),
+      expect.objectContaining({ id: "adisyon-mobile-app", part: "mobile", src: "/cases/adisyon-mobile-tables.webp" }),
     ]),
   );
   for (const locale of locales) {
