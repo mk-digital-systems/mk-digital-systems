@@ -7,6 +7,7 @@ import { getContent } from "@/content/site";
 import { validLocale } from "@/lib/seo";
 import { Navigation } from "@/components/brand/Navigation";
 import { SiteFooter } from "@/components/brand/SiteFooter";
+import { RepublicWelcome } from "@/components/brand/RepublicWelcome";
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
@@ -41,6 +42,7 @@ export default async function LocaleLayout({
             {children}
           </main>
           <SiteFooter locale={locale} copy={copy} />
+          <RepublicWelcome />
         </NextIntlClientProvider>
       </body>
     </html>
