@@ -188,7 +188,7 @@ const tr: SiteContent = {
     socialProfile:
       "MK Digital Systems {platform} profili — yeni sekmede açılır",
     signature:
-      "Mustafa Öner tarafından geliştirilen dijital ürünler ve özel yazılımlar",
+      "MK Digital Systems — dijital ürünler ve özel yazılımlar",
   },
   legal: {
     privacyTitle: "Gizlilik bildirimi",

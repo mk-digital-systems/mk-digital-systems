@@ -12,12 +12,16 @@ import {
   solutionUrl,
   cityUrl,
   turkishOnlyAlternates,
+  demoAlternates,
+  demoLocales,
+  demoUrl,
   type PageKey,
 } from "@/lib/site-config";
 import { caseStudyIds, caseStudyLocales } from "@/content/case-studies";
 import { solutionIds, solutionLocales, solutionRoutes } from "@/content/solutions";
 import { citySlug, hasServiceAreas, readyCities } from "@/content/cities";
 import { products } from "@/content/products";
+import { demos } from "@/content/demos";
 import { absoluteProductUrl, absoluteTopicUrl } from "@/lib/product-seo";
 export default function sitemap(): MetadataRoute.Sitemap {
   if (!isIndexable) return [];
@@ -89,5 +93,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }),
     ];
   });
-  return [...pages, ...solutions, ...cases, ...productPages, ...areas];
+  // Demo and concept works: tr and en only, linked to each other.
+  const demoPages = demoLocales.flatMap((locale) => [
+    {
+      url: demoUrl(locale),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      alternates: { languages: demoAlternates() },
+    },
+    ...demos.map((demo) => ({
+      url: demoUrl(locale, demo.slug),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+      alternates: { languages: demoAlternates(demo.slug) },
+    })),
+  ]);
+  return [...pages, ...solutions, ...cases, ...productPages, ...areas, ...demoPages];
 }

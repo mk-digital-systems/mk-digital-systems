@@ -21,6 +21,9 @@ export const pathnames = {
   "/work": { tr: "/calismalar" },
   "/work/[slug]": { tr: "/calismalar/[slug]" },
   "/contact": { tr: "/iletisim" },
+  // Demo and concept works (content/demos): Turkish and English only; de/fr 404.
+  "/demos": { tr: "/demolar" },
+  "/demos/[slug]": { tr: "/demolar/[slug]" },
   "/legal/privacy": { tr: "/yasal/gizlilik" },
   "/legal/terms": { tr: "/yasal/kosullar" },
   // City pages (content/cities) are Turkish only; other locales 404 on both routes.

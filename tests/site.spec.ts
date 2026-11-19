@@ -8,6 +8,7 @@ import * as caseStudies from "../content/case-studies";
 import * as solutions from "../content/solutions";
 import * as cities from "../content/cities";
 import * as productContent from "../content/products";
+import { demos } from "../content/demos";
 import { getSolutionsCopy } from "../content/solutions";
 const widths = [360, 375, 390, 430, 768, 1024, 1440];
 const pages: Route[] = ["/", "/solutions", "/work", "/contact"];
@@ -362,7 +363,7 @@ test("configured production sitemap and preview exclusion", () => {
     absoluteProductUrl: (product: {id: string}) => `${config.SITE_URL}/tr/${product.id}`,
     absoluteTopicUrl: (product: {id: string}, topic: {slug: string}) => `${config.SITE_URL}/tr/${product.id}/${topic.slug}`,
   };
-  const dependencies = {"@/config/i18n": {locales, defaultLocale: "tr"}, "@/lib/site-config": config, "@/content/case-studies": caseStudies, "@/content/solutions": solutions, "@/content/cities": cities, "@/content/products": productContent, "@/lib/product-seo": productSeo};
+  const dependencies = {"@/config/i18n": {locales, defaultLocale: "tr"}, "@/lib/site-config": config, "@/content/case-studies": caseStudies, "@/content/solutions": solutions, "@/content/cities": cities, "@/content/products": productContent, "@/content/demos": {demos}, "@/lib/product-seo": productSeo};
   const sitemap = load("app/sitemap.ts", dependencies, env).default();
   const caseEntries = caseStudies.caseStudyIds.reduce((n, id) => n + caseStudies.caseStudyLocales(id).length, 0);
   // Solution pages exist only in written languages; each lists exactly those plus x-default.
@@ -372,19 +373,22 @@ test("configured production sitemap and preview exclusion", () => {
   // Turkish-only: the service-areas index plus every published city (hero image in place).
   const areaEntries = cities.hasServiceAreas() ? 1 + cities.readyCities().length : 0;
   const productEntries = productContent.products.reduce((count, product) => count + 1 + product.topics.length, 0);
-  const expectedEntries = 24 + caseEntries + solutionEntries + productEntries + areaEntries;
+  // Demo section: tr and en, an index plus one page per demo.
+  const demoEntries = 2 * (1 + demos.length);
+  const expectedEntries = 24 + caseEntries + solutionEntries + productEntries + areaEntries + demoEntries;
   expect(sitemap).toHaveLength(expectedEntries);
   expect(new Set(sitemap.map((entry: {url:string}) => entry.url)).size).toBe(expectedEntries);
   const productUrls = productContent.products.flatMap((product) => [
     productSeo.absoluteProductUrl(product),
     ...product.topics.map((topic) => productSeo.absoluteTopicUrl(product, topic)),
   ]);
+  const demoUrls = new Set([config.demoUrl("tr"), config.demoUrl("en"), ...demos.flatMap((demo) => [config.demoUrl("tr", demo.slug), config.demoUrl("en", demo.slug)])]);
   const turkishOnly = new Set([config.serviceAreasUrl(), ...cities.readyCities().map((city) => config.cityUrl(cities.citySlug(city.id))), ...productUrls]);
   const solutionUrls = new Set(solutions.solutionIds.flatMap((id) => written.map((l) => config.solutionUrl(l, solutions.solutionRoutes[id]))));
   for (const entry of sitemap) {
     expect(entry.url).toMatch(/^https:\/\/agency\.example\/(tr|en|de|fr)(\/|$)/);
     expect(Object.keys(entry.alternates.languages)).toHaveLength(
-      turkishOnly.has(entry.url) ? 2 : solutionUrls.has(entry.url) ? written.length + 1 : 5,
+      turkishOnly.has(entry.url) ? 2 : demoUrls.has(entry.url) ? 3 : solutionUrls.has(entry.url) ? written.length + 1 : 5,
     );
     expect(entry.alternates.languages["x-default"]).toContain("/tr");
   }

@@ -80,3 +80,16 @@ export function languageAlternates(page: PageKey) {
     "x-default": pageUrl(defaultLocale, page),
   };
 }
+/** Demo and concept works: tr and en only. The index when slug is omitted. */
+export const demoLocales = ["tr", "en"] as const satisfies readonly Locale[];
+export function demoUrl(locale: Locale, slug?: string) {
+  const base = locale === "tr" ? "/demolar" : "/demos";
+  return `${SITE_URL}/${locale}${base}${slug ? `/${slug}` : ""}`;
+}
+export function demoAlternates(slug?: string) {
+  return {
+    tr: demoUrl("tr", slug),
+    en: demoUrl("en", slug),
+    "x-default": demoUrl("tr", slug),
+  };
+}

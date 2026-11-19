@@ -74,7 +74,7 @@ export const projects: Project[] = [
     links: [{ kind: "app", url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.aura" }],
   },
   {
-    id: "mavi-kadraj-ile-ogreniyorum", name: "Mavi Kadraj ile Öğreniyorum", layer: "selected", status: "live-demo",
+    id: "mavi-kadraj-ile-ogreniyorum", name: "Mavi Kadrajla Öğreniyorum", layer: "selected", status: "live-demo",
     services: ["mobile"], sectors: ["lifestyle"], needs: ["idea"], cardType: "experience", scene: "paper",
     links: [{ kind: "app", url: "https://play.google.com/store/apps/details?id=com.mavikadaj.learn" }],
   },

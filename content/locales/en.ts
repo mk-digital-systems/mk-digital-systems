@@ -191,7 +191,7 @@ const en: SiteContent = {
     top: "Back to top",
     socialLabel: "Social media",
     socialProfile: "MK Digital Systems on {platform} — opens in a new tab",
-    signature: "Digital products and custom software developed by Mustafa Öner",
+    signature: "MK Digital Systems — digital products and custom software",
   },
   legal: {
     privacyTitle: "Privacy notice",

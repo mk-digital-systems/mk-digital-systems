@@ -12,12 +12,15 @@ const expectedCounts = {
   namehub: 2,
   "mavi-kadraj": 2,
   "kadraj-rotam": 2,
+  "mk-pati": 0,
+  "mk-traceops": 0,
 } as const;
 
-test("the corporate showcase contains exactly the approved ten products in priority order", () => {
+test("the corporate showcase contains the approved ten products first, then MK Pati and MK TraceOps", () => {
   expect(products.map((product) => product.id)).toEqual(Object.keys(expectedCounts));
   expect(products[0].name).toBe("MK OPS");
-  expect(products).toHaveLength(10);
+  expect(products).toHaveLength(12);
+  expect(products.find((product) => product.id === "mavi-kadraj-ile-ogreniyorum")!.name).toBe("Mavi Kadrajla Öğreniyorum");
 });
 
 test("the product architecture contains 50 distinct intent pages", () => {
@@ -45,9 +48,20 @@ test("the product architecture contains 50 distinct intent pages", () => {
 test("published Android products use verified Google Play links", () => {
   const links = Object.fromEntries(products.map((product) => [product.id, product.links.map((link) => link.url)]));
   expect(links["mk-adisyon"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.adisyon");
+  expect(links["mk-adisyon"]).not.toContain("https://adisyonn.vercel.app");
   expect(links["aura-gunluk"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.aura");
   expect(links["mavi-kadraj-ile-ogreniyorum"]).toContain("https://play.google.com/store/apps/details?id=com.mavikadaj.learn");
   expect(links["bebegimin-ilk-yili"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.bebegimin_ilk_yili");
+});
+
+test("Bebeğimin İlk Yılı product page uses its real application screen", () => {
+  const product = products.find((entry) => entry.id === "bebegimin-ilk-yili")!;
+  expect(product.images).toContainEqual({
+    src: "/work/bebegimin-ilk-yili.webp",
+    alt: "Bebeğimin İlk Yılı Android uygulamasının ana ekranı",
+    width: 1017,
+    height: 2048,
+  });
 });
 
 test("product lists, feature cards and topic cards do not show ordinal numbers", async ({ page }) => {
