@@ -193,7 +193,7 @@ const fr: SiteContent = {
     socialProfile:
       "MK Digital Systems sur {platform} — s’ouvre dans un nouvel onglet",
     signature:
-      "Produits numériques et logiciels sur mesure développés par Mustafa Öner",
+      "MK Digital Systems — produits numériques et logiciels sur mesure",
   },
   legal: {
     privacyTitle: "Notice de confidentialité",

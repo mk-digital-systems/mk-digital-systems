@@ -102,15 +102,6 @@ export function SiteFooter({
           </nav>
           <p>
             {copy.footer.signature}
-            <span aria-hidden="true"> · </span>
-            <a
-              href={siteLinks.creator}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {siteLinks.creatorLabel}
-              <Arrow diagonal />
-            </a>
           </p>
         </div>
         <div className="footer-bottom">

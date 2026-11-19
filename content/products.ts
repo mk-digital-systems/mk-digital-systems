@@ -410,7 +410,6 @@ export const products: Product[] = [
 ];
 
 export const GOOGLE_PLAY_DEVELOPER_URL = "https://play.google.com/store/apps/developer?id=MK+DIGITAL+SYSTEMS";
-export const PORTFOLIO_URL = "https://mustafaoner.net";
 
 export function getProduct(id: string) {
   return products.find((product) => product.id === id);

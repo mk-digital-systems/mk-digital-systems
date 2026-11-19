@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { locales } from "../config/i18n";
 import { getContent } from "../content/site";
-import { socialLinks, siteLinks } from "../lib/site-links";
+import { socialLinks } from "../lib/site-links";
 import { localPath } from "./paths";
 
 for (const locale of locales) {
@@ -28,10 +28,7 @@ for (const locale of locales) {
     await expect(page.locator(".footer-signature > p")).toContainText(
       copy.footer.signature,
     );
-    const credit = page.locator(".footer-signature > p a");
-    await expect(credit).toHaveAttribute("href", siteLinks.creator);
-    await expect(credit).toHaveAttribute("target", "_blank");
-    await expect(credit).toHaveAttribute("rel", "noopener noreferrer");
+    await expect(page.locator('.footer-signature a[href*="mustafaoner.net"]')).toHaveCount(0);
     for (const width of [360, 375, 390, 430, 768, 1024, 1440]) {
       await page.setViewportSize({ width, height: 900 });
       expect(

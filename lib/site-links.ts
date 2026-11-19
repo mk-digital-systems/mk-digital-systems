@@ -18,8 +18,6 @@ export const socialLinks: SocialLink[] = [
 ];
 // Add a verified Facebook URL here when supplied; unconfigured platforms stay hidden.
 export const siteLinks = {
-  creator: "https://mustafaoner.net",
-  creatorLabel: "mustafaoner.net",
   googlePlay: "https://play.google.com/store/apps/developer?id=MK+DIGITAL+SYSTEMS",
   googlePlayLabel: "Google Play",
 };
