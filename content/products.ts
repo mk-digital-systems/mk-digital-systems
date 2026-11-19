@@ -305,7 +305,7 @@ export const products: Product[] = [
     audience: "Restoran, kafe ve masa servisi yürüten yiyecek-içecek işletmeleri",
     verifiedFeatures: ["Masa ve açık adisyon görünümü", "Garson sipariş akışı", "Mutfak sipariş ekranı", "Kasa ve tahsilat kaydı", "Rol bazlı web yüzeyleri", "Yayındaki Android uygulaması"],
     limitations: "Fiziksel POS, yazıcı, reçete/maliyet ve kapsamlı stok entegrasyonları doğrulanmış özellik olarak sunulmaz.",
-    links: [{ label: "Google Play'de Gör", url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.adisyon", kind: "play" }, { label: "Web Panelini İncele", url: "https://adisyonn.vercel.app", kind: "demo" }],
+    links: [{ label: "Google Play'de Gör", url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.adisyon", kind: "play" }],
     images: [{ src: "/cases/adisyon-mobile-tables.webp", alt: "MK Adisyon Android uygulamasında masa durumları ekranı", width: 1080, height: 1920 }, { src: "/hero/adisyon-kasa.webp", alt: "MK Adisyon web kasa paneli", width: 1600, height: 1000 }, { src: "/cases/adisyon-kitchen.webp", alt: "MK Adisyon web mutfak sipariş ekranı", width: 1600, height: 1000 }], topics: mkAdisyonTopics,
   },
   {
@@ -353,7 +353,9 @@ export const products: Product[] = [
     audience: "Bebeklerinin ilk yılını düzenli ve anlamlı bir dijital hatıraya dönüştürmek isteyen aileler",
     verifiedFeatures: ["Google Play'de yayınlanan Android uygulaması", "Bebek anılarını düzenleme odağı", "Fotoğraf ve video kapsamı", "İlkleri ve aile notlarını bir araya getiren dijital hatıra yaklaşımı"],
     limitations: "Uygulamanın güncel özellikleri ve veri güvenliği beyanı için Google Play mağaza sayfası esas alınmalıdır.",
-    links: [{ label: "Google Play'de Gör", url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.bebegimin_ilk_yili", kind: "play" }], images: [], topics: twoPageTopics["bebegimin-ilk-yili"],
+    links: [{ label: "Google Play'de Gör", url: "https://play.google.com/store/apps/details?id=com.mkdigitalsystems.bebegimin_ilk_yili", kind: "play" }],
+    images: [{ src: "/work/bebegimin-ilk-yili.webp", alt: "Bebeğimin İlk Yılı Android uygulamasının ana ekranı", width: 1017, height: 2048 }],
+    topics: twoPageTopics["bebegimin-ilk-yili"],
   },
   {
     id: "namehub", name: "Namehub", category: "Web platformu · İsim keşfi", status: "Canlı ürün",

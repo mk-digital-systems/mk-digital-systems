@@ -45,9 +45,20 @@ test("the product architecture contains 50 distinct intent pages", () => {
 test("published Android products use verified Google Play links", () => {
   const links = Object.fromEntries(products.map((product) => [product.id, product.links.map((link) => link.url)]));
   expect(links["mk-adisyon"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.adisyon");
+  expect(links["mk-adisyon"]).not.toContain("https://adisyonn.vercel.app");
   expect(links["aura-gunluk"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.aura");
   expect(links["mavi-kadraj-ile-ogreniyorum"]).toContain("https://play.google.com/store/apps/details?id=com.mavikadaj.learn");
   expect(links["bebegimin-ilk-yili"]).toContain("https://play.google.com/store/apps/details?id=com.mkdigitalsystems.bebegimin_ilk_yili");
+});
+
+test("Bebeğimin İlk Yılı product page uses its real application screen", () => {
+  const product = products.find((entry) => entry.id === "bebegimin-ilk-yili")!;
+  expect(product.images).toContainEqual({
+    src: "/work/bebegimin-ilk-yili.webp",
+    alt: "Bebeğimin İlk Yılı Android uygulamasının ana ekranı",
+    width: 1017,
+    height: 2048,
+  });
 });
 
 test("product lists, feature cards and topic cards do not show ordinal numbers", async ({ page }) => {
