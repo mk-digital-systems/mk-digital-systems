@@ -8,7 +8,9 @@ export type ProductId =
   | "bebegimin-ilk-yili"
   | "namehub"
   | "mavi-kadraj"
-  | "kadraj-rotam";
+  | "kadraj-rotam"
+  | "mk-pati"
+  | "mk-traceops";
 
 export type ProductLink = {
   label: string;
@@ -264,9 +266,9 @@ const auraTopics: SeoTopic[] = [
   topic("gunluk-yazma-aliskanligi", "Günlük Yazma Alışkanlığı", "Düzenli günlük yazma rutini oluşturmak", "Günlük yazma alışkanlığı için küçük ve sürdürülebilir bir rutin kurun; Aura'da duygu, anı, taslak ve gelecek tarihli notları kullanın.", "Günlük tutma alışkanlığı çoğu zaman uzun yazma hedefi yüzünden yarıda kalır. Düzenli olmak için her gün aynı uzunlukta yazmak yerine ulaşılabilir bir kayıt ritmi gerekir.", [{ heading: "Küçük kayıtlarla başlamak", body: "Bir cümle, bir duygu veya günün tek fotoğrafı da günlük kaydıdır. Taslak özelliği yazıyı aynı anda bitirme baskısını azaltır." }, { heading: "Geleceğe not bırakmak", body: "Aura, gelecek tarihler için not oluşturmayı destekler. Takvim geçmişe bakmanın yanında ileride açılacak düşünceler için de kullanılabilir." }], ["Her gün için ulaşılabilir kayıt hedefi seçmek", "Taslak ve favorilerle yazıları düzenlemek", "Takvimi geçmiş ve gelecek notlar için kullanmak"], [{ title: "İki dakikalık akşam rutini", text: "Kullanıcı yalnızca ruh hâlini ve günün en önemli anını kaydeder." }, { title: "Sonra tamamlanacak düşünce", text: "Yarım kalan yazı taslak olarak saklanır ve uygun zamanda devam edilir." }], [{ question: "Her gün uzun yazmak gerekir mi?", answer: "Hayır. Kısa not, duygu veya özel an kaydı da alışkanlığın bir parçası olabilir." }, { question: "Gelecek tarihli not eklenebilir mi?", answer: "Evet. Bu özellik Aura'nın doğrulanmış Google Play açıklamasında yer alır." }]),
 ];
 
-const twoPageTopics: Record<Exclude<ProductId, "mk-ops" | "mk-adisyon" | "mk-farm" | "mk-resepsiyon" | "aura-gunluk">, SeoTopic[]> = {
+const twoPageTopics: Record<Exclude<ProductId, "mk-ops" | "mk-adisyon" | "mk-farm" | "mk-resepsiyon" | "aura-gunluk" | "mk-pati" | "mk-traceops">, SeoTopic[]> = {
   "mavi-kadraj-ile-ogreniyorum": [
-    topic("uygulama-tanitimi", "Mavi Kadraj ile Öğreniyorum", "Çocuklar için yayınlanan eğitim uygulamasını incelemek", "Mavi Kadraj ile Öğreniyorum; okul öncesi çocukların renkleri ve sayıları güvenli, sade ve eğlenceli görsellerle keşfetmesine yardımcı olur.", "Çocuklara yönelik bir öğrenme ekranı, dikkat dağıtan menülerden uzak ve yaşa uygun olmalıdır. Mavi Kadraj ile Öğreniyorum renk ve sayı çalışmasını basit görsel etkileşimlerle sunar.", [{ heading: "Neler öğretiyor?", body: "Yayınlanan uygulama renkleri tanıma, sayıları öğrenme ve tekrar etme üzerine odaklanır." }, { heading: "Kimler için uygun?", body: "Okul öncesi, ilkokula hazırlanan ve renklerle sayıları yeni öğrenen çocuklar için geliştirilmiştir." }], ["Renkleri görsellerle tanımak", "Sayıları öğrenmek ve tekrar etmek", "Çocuğa uygun sade arayüz kullanmak"], [{ title: "Evde kısa tekrar", text: "Çocuk, ebeveyn eşliğinde renk ve sayı ekranlarında kısa bir öğrenme oturumu yapar." }, { title: "Okul öncesi hazırlık", text: "Temel kavramlar eğlenceli görsellerle tekrar edilir." }], [{ question: "Google Play'de yayında mı?", answer: "Evet. Resmi geliştirici sayfasındaki doğrulanmış uygulama bağlantısı kullanılır." }, { question: "Kişisel veri topluyor mu?", answer: "Mağaza açıklaması çocuklardan kişisel bilgi toplanmadığını belirtir; güncel veri güvenliği beyanı Google Play'den kontrol edilmelidir." }]),
+    topic("uygulama-tanitimi", "Mavi Kadrajla Öğreniyorum", "Çocuklar için yayınlanan eğitim uygulamasını incelemek", "Mavi Kadrajla Öğreniyorum; okul öncesi çocukların renkleri ve sayıları güvenli, sade ve eğlenceli görsellerle keşfetmesine yardımcı olur.", "Çocuklara yönelik bir öğrenme ekranı, dikkat dağıtan menülerden uzak ve yaşa uygun olmalıdır. Mavi Kadrajla Öğreniyorum renk ve sayı çalışmasını basit görsel etkileşimlerle sunar.", [{ heading: "Neler öğretiyor?", body: "Yayınlanan uygulama renkleri tanıma, sayıları öğrenme ve tekrar etme üzerine odaklanır." }, { heading: "Kimler için uygun?", body: "Okul öncesi, ilkokula hazırlanan ve renklerle sayıları yeni öğrenen çocuklar için geliştirilmiştir." }], ["Renkleri görsellerle tanımak", "Sayıları öğrenmek ve tekrar etmek", "Çocuğa uygun sade arayüz kullanmak"], [{ title: "Evde kısa tekrar", text: "Çocuk, ebeveyn eşliğinde renk ve sayı ekranlarında kısa bir öğrenme oturumu yapar." }, { title: "Okul öncesi hazırlık", text: "Temel kavramlar eğlenceli görsellerle tekrar edilir." }], [{ question: "Google Play'de yayında mı?", answer: "Evet. Resmi geliştirici sayfasındaki doğrulanmış uygulama bağlantısı kullanılır." }, { question: "Kişisel veri topluyor mu?", answer: "Mağaza açıklaması çocuklardan kişisel bilgi toplanmadığını belirtir; güncel veri güvenliği beyanı Google Play'den kontrol edilmelidir." }]),
     topic("mobil-egitim-ogrenme-uygulamasi", "Mobil Eğitim ve Öğrenme Uygulaması", "Okul öncesi renk ve sayı öğrenimini mobilde desteklemek", "Mobil eğitim ve öğrenme uygulaması ile çocukların renk ve sayıları sade, güvenli ve dikkat dağıtmayan bir Android deneyiminde tekrar etmesini destekleyin.", "Mobil eğitimde daha çok özellik her zaman daha iyi değildir. Okul öncesi kullanıcı için net görsel, anlaşılır etkileşim ve sınırlı hedef daha güvenli bir öğrenme ortamı oluşturur.", [{ heading: "Tek oturumda tek hedef", body: "Renk veya sayı çalışması kısa bölümlere ayrıldığında çocuk ne yapacağını daha kolay anlar." }, { heading: "Mavi Kadraj yaklaşımı", body: "Uygulama sade arayüz, eğlenceli görseller ve temel renk-sayı içeriğiyle öğrenme ve tekrarı destekler." }], ["Yaşa uygun görsel dil", "Basit ve anlaşılır gezinme", "Renk ve sayı tekrarına odaklı içerik"], [{ title: "Ebeveynle birlikte kullanım", text: "Ebeveyn ekrandaki renk veya sayıyı sorar, çocuk görsel üzerinden tekrar eder." }, { title: "Kısa bağımsız çalışma", text: "Sade arayüz çocuğun sınırlı öğrenme akışında kendi başına ilerlemesini kolaylaştırır." }], [{ question: "Reklam içeriyor mu?", answer: "Doğrulanmış mağaza tanıtımı reklamsız ve çocuklara uygun deneyim vurgusu yapar; güncel durum Google Play sayfasından kontrol edilmelidir." }, { question: "Hangi konuları kapsıyor?", answer: "Doğrulanmış mevcut kapsam renkler ve sayılardır; ek ders içerikleri varmış gibi gösterilmez." }]),
   ],
   "bebegimin-ilk-yili": [
@@ -321,9 +323,9 @@ export const products: Product[] = [
   {
     id: "mk-resepsiyon", name: "MK Resepsiyon", category: "İşletme yönetimi · Konaklama", status: "Canlı ürün",
     summary: "Oda planı, misafir giriş-çıkışı, tahsilat ve yönetim görünümünü bir araya getiren resepsiyon operasyon sistemi.",
-    description: "MK Resepsiyon, otel ve pansiyonların günlük oda ve misafir akışını sade bir panelde toplar. Doğrulanmayan kanal yöneticisi, kimlik bildirimi veya gelişmiş PMS entegrasyonları tamamlanmış gibi gösterilmez.",
+    description: "MK Resepsiyon, otel ve pansiyonların günlük oda ve misafir akışını sade bir panelde toplar. Daha önce \"Mavi Resepsiyon\" adıyla paylaşılan portföy çalışması aynı sistemdir: resepsiyon operasyon ekranı, rezervasyon, giriş-çıkış, tahsilat, gider ve kasa süreçleri tek panelde gösterilir; gerçek müşteri kurulumu değil, portföy çalışmasıdır. Doğrulanmayan kanal yöneticisi, kimlik bildirimi veya gelişmiş PMS entegrasyonları tamamlanmış gibi gösterilmez.",
     audience: "Pansiyon, butik otel ve küçük-orta ölçekli konaklama işletmeleri",
-    verifiedFeatures: ["Oda planı ve doluluk görünümü", "Misafir giriş işlemleri", "Tahsilat ve kasa kayıtları", "Resepsiyon genel bakışı", "Yönetici yetkileri"],
+    verifiedFeatures: ["Oda planı ve doluluk görünümü", "Rezervasyon yönetimi", "Check-in / check-out ve misafir yönetimi", "Tahsilat, kısmi ödeme ve ödeme bekleyen odalar", "Gider yönetimi ve kasa", "Ciro / tahsilat ayrımı ve finans raporları", "İşlem logları", "Rol bazlı kullanım ve yönetici yetkileri"],
     limitations: "Online rezervasyon motoru, kanal yöneticisi ve resmi kimlik bildirim entegrasyonu doğrulanmamıştır.",
     links: [{ label: "MK Resepsiyon'u İncele", url: "https://resepsiyon.vercel.app", kind: "demo" }],
     images: [{ src: "/work/mk-resepsiyon.webp", alt: "MK Resepsiyon genel bakış ekranı", width: 1600, height: 1000 }], topics: receptionTopics,
@@ -338,7 +340,7 @@ export const products: Product[] = [
     images: [{ src: "/hero/aura-today.webp", alt: "Aura Günlük bugün ekranı", width: 560, height: 1212 }, { src: "/hero/aura-mood.webp", alt: "Aura Günlük duygu seçimi ekranı", width: 560, height: 1212 }, { src: "/hero/aura-calendar.webp", alt: "Aura Günlük takvim ekranı", width: 560, height: 1212 }], topics: auraTopics,
   },
   {
-    id: "mavi-kadraj-ile-ogreniyorum", name: "Mavi Kadraj ile Öğreniyorum", category: "Mobil uygulama · Eğitim", status: "Yayında",
+    id: "mavi-kadraj-ile-ogreniyorum", name: "Mavi Kadrajla Öğreniyorum", category: "Mobil uygulama · Eğitim", status: "Yayında",
     summary: "Okul öncesi çocukların renkleri ve sayıları sade, eğlenceli görsellerle öğrenmesine ve tekrar etmesine yardımcı olan Android uygulaması.",
     description: "Çocuklara uygun sade arayüz, renk ve sayı içeriği ile kısa öğrenme oturumlarına odaklanan mobil eğitim uygulamasıdır.",
     audience: "Okul öncesi çocuklar, ilkokula hazırlananlar ve aileleri",
@@ -384,6 +386,26 @@ export const products: Product[] = [
     limitations: "Gerçek zamanlı navigasyon ve çevrimdışı rota indirme doğrulanmış özellik değildir.",
     links: [{ label: "Kadraj Rotam'ı İncele", url: "https://kadrajrotam.com.tr", kind: "site" }],
     images: [{ src: "/work/kadraj-rotam.webp", alt: "Kadraj Rotam fotoğraf ve keşif rotaları platformu", width: 1600, height: 1000 }], topics: twoPageTopics["kadraj-rotam"],
+  },
+  {
+    id: "mk-pati", name: "MK Pati", category: "İşletme yönetimi · Veteriner klinik", status: "Canlı ürün",
+    summary: "Veteriner klinikleri için hasta, muayene, aşı, tedavi ve randevu yönetimini tek panelde birleştiren; yazılı ve sesli yapay zekâ asistanı içeren çok kiracılı SaaS platformu.",
+    description: "Her klinik kendi çalışma alanında hasta ve sahip kayıtlarını, muayene ve tedavi geçmişini, aşı takibini ve randevu takvimini yönetir; klinikler arası veri izolasyonu doğrudan veritabanında (PostgreSQL Row Level Security) zorunlu kılınır. MK Pati AI hekimin yerine geçmez: hasta geçmişini özetler, muayene notlarını düzenler ve hayvan sahibi için bilgilendirme taslakları hazırlar; teşhis koymaz, ilaç ve doz önermez. Hayvan sahipleri davetle açılan portalda aşı ve randevularını görür; yapay zekâ ile yazılı veya sesli konuşarak randevu ve ilaç talebi oluşturur, talepler klinik onayından geçer.",
+    audience: "Veteriner klinikleri ve hayvan sahipleriyle dijital iletişim kurmak isteyen veteriner hekimler",
+    verifiedFeatures: ["Hasta ve hayvan sahibi kayıtları", "Muayene, tedavi ve işlem geçmişi", "Aşı takibi ve hatırlatmalar", "Randevu takvimi ve çakışma kontrolü", "Klinik dashboard'u", "Hasta geçmişi ve muayene özetleri (AI)", "Veteriner notu düzenleme (AI)", "Sesli konuşma ve sesli yanıt", "Hayvan sahibi portalı", "AI ile randevu ve ilaç talebi", "Acil durumda kliniğe yönlendirme", "Klinikler arası tam veri izolasyonu (RLS)", "Rol bazlı erişim", "Abonelik, kullanıcı limiti ve AI kotası yönetimi", "Kullanım istatistikleri ve denetim kayıtları"],
+    limitations: "Yapay zekâ teşhis koymaz, ilaç veya doz önermez; klinik kararı veteriner hekime aittir.",
+    links: [{ label: "MK Pati'yi İncele", url: "https://mavi-pati.vercel.app", kind: "demo" }],
+    images: [], topics: [],
+  },
+  {
+    id: "mk-traceops", name: "MK TraceOps", category: "Üretim yönetimi · İzlenebilirlik", status: "Geliştirme aşamasında",
+    summary: "Üretim, parça, operasyon, depo, stok ve sevkiyat süreçlerini uçtan uca takip etmek için geliştirilen üretim ve izlenebilirlik yazılımı.",
+    description: "Ürün ve parça kayıtlarını üretim rotaları, depo hareketleri ve sevkiyatlarla ilişkilendirir. Excel veri aktarımı ve rol bazlı yetkilendirme ile ekiplerin üretim sürecini takip etmesini, stok hareketlerini incelemesini ve raporlamasını destekler. Ürün geliştirme aşamasındadır.",
+    audience: "Üretim, parça ve stok hareketlerini izlenebilir biçimde takip etmek isteyen üretim işletmeleri",
+    verifiedFeatures: ["Ürün / parça yönetimi", "Excel veri aktarımı", "Operasyon takibi", "Depolar arası hareket", "Stok takibi", "Sevkiyat yönetimi", "Üretim rotaları", "Rol bazlı kullanıcı yetkilendirme", "Raporlama", "Üretim izlenebilirliği"],
+    limitations: "Ürün geliştirme aşamasındadır; herkese açık canlı bir demo bağlantısı bulunmamaktadır.",
+    links: [],
+    images: [], topics: [],
   },
 ];
 

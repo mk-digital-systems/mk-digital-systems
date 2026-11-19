@@ -12,12 +12,15 @@ const expectedCounts = {
   namehub: 2,
   "mavi-kadraj": 2,
   "kadraj-rotam": 2,
+  "mk-pati": 0,
+  "mk-traceops": 0,
 } as const;
 
-test("the corporate showcase contains exactly the approved ten products in priority order", () => {
+test("the corporate showcase contains the approved ten products first, then MK Pati and MK TraceOps", () => {
   expect(products.map((product) => product.id)).toEqual(Object.keys(expectedCounts));
   expect(products[0].name).toBe("MK OPS");
-  expect(products).toHaveLength(10);
+  expect(products).toHaveLength(12);
+  expect(products.find((product) => product.id === "mavi-kadraj-ile-ogreniyorum")!.name).toBe("Mavi Kadrajla Öğreniyorum");
 });
 
 test("the product architecture contains 50 distinct intent pages", () => {

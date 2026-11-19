@@ -285,7 +285,7 @@ const tr: SolutionsCopy = {
       },
       work: {
         heading: "Gerçek çalışmalar",
-        text: "Google Play'de yayınlanan MK Adisyon, Aura Günlük ve Mavi Kadraj ile Öğreniyorum uygulamaları.",
+        text: "Google Play'de yayınlanan MK Adisyon, Aura Günlük ve Mavi Kadrajla Öğreniyorum uygulamaları.",
       },
       faq: {
         heading: "Sık sorulan sorular",

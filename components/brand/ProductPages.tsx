@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Link } from "@/config/navigation";
 import type { Product, SeoTopic } from "@/content/products";
-import { GOOGLE_PLAY_DEVELOPER_URL, PORTFOLIO_URL, products } from "@/content/products";
+import { GOOGLE_PLAY_DEVELOPER_URL, products } from "@/content/products";
 import { Arrow } from "./Arrow";
 
 function ProductLinkButton({ link, primary = false }: { link: Product["links"][number]; primary?: boolean }) {
@@ -111,6 +111,7 @@ export function ProductHubView({ product }: { product: Product }) {
         </section>
       )}
 
+      {product.topics.length > 0 && (
       <section className="section wrap product-topics" aria-labelledby="product-topics-title">
         <div className="section-head">
           <div>
@@ -132,6 +133,7 @@ export function ProductHubView({ product }: { product: Product }) {
           ))}
         </div>
       </section>
+      )}
 
       <section className="product-final-cta">
         <div className="wrap">
@@ -248,7 +250,7 @@ export function ProductPortfolioIntro() {
     <section className="section wrap portfolio-intro" aria-labelledby="portfolio-products-title">
       <div className="section-head">
         <div>
-          <p className="eyebrow">10 ANA ÜRÜN</p>
+          <p className="eyebrow">{products.length} ÜRÜN</p>
           <h2 id="portfolio-products-title">Sahadan mobil deneyimlere, odaklı bir ürün portföyü.</h2>
         </div>
         <p className="section-description">MK OPS amiral gemimizdir. Diğer ürünler işletme yönetimi, mobil uygulamalar ve web platformları olarak sıralanır.</p>
@@ -263,13 +265,13 @@ export function ProductPortfolioIntro() {
       </div>
       <aside className="portfolio-external">
         <div>
-          <p className="eyebrow">TÜM PORTFÖY</p>
-          <h3>Diğer Projelerimizi Keşfedin</h3>
-          <p>MK Digital Systems’ın öne çıkan yazılım ürünleri dışında geliştirdiğimiz diğer dijital projeleri ve geçmiş çalışmalarımızı kişisel portföyümüzde inceleyebilirsiniz.</p>
+          <p className="eyebrow">DEMOLAR</p>
+          <h3>Demo Web Siteleri ve Konsept Çalışmalar</h3>
+          <p>Tasarım ve geliştirme yaklaşımımızı gösteren demo web siteleri ve kendi içerik projelerimiz. Bunlar müşteri referansı değildir.</p>
         </div>
-        <a className="button" href={PORTFOLIO_URL} target="_blank" rel="noopener noreferrer">
-          Tüm Projeleri Gör <Arrow diagonal />
-        </a>
+        <Link className="button" href="/demos">
+          Demoları Gör <Arrow />
+        </Link>
       </aside>
     </section>
   );
@@ -283,7 +285,7 @@ export function ApplicationsShowcase() {
       <div className="wrap">
         <div className="section-head">
           <div><p className="eyebrow">UYGULAMALARIMIZ</p><h2 id="applications-title">Google Play’de yayınlanan uygulamalarımız.</h2></div>
-          <p className="section-description">MK Adisyon, Aura Günlük, Mavi Kadraj ile Öğreniyorum ve Bebeğimin İlk Yılı Google Play’de yayında.</p>
+          <p className="section-description">MK Adisyon, Aura Günlük, Mavi Kadrajla Öğreniyorum ve Bebeğimin İlk Yılı Google Play’de yayında.</p>
         </div>
         <div className="application-grid">
           {applications.map((product) => {

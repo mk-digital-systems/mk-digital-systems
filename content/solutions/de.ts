@@ -282,7 +282,7 @@ const de: SolutionsCopy = {
       },
       work: {
         heading: "Echte Arbeit",
-        text: "MK Adisyon, Aura Tagebuch und Mavi Kadraj ile Öğreniyorum, veröffentlicht bei Google Play.",
+        text: "MK Adisyon, Aura Tagebuch und Mavi Kadrajla Öğreniyorum, veröffentlicht bei Google Play.",
       },
       faq: {
         heading: "Häufige Fragen",

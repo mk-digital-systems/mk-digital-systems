@@ -282,7 +282,7 @@ const en: SolutionsCopy = {
       },
       work: {
         heading: "Real work",
-        text: "MK Adisyon, Aura Journal and Mavi Kadraj ile Öğreniyorum, published on Google Play.",
+        text: "MK Adisyon, Aura Journal and Mavi Kadrajla Öğreniyorum, published on Google Play.",
       },
       faq: {
         heading: "Frequently asked questions",
